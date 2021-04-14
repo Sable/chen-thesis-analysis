@@ -49,14 +49,26 @@ Benchmarks
 
 - 22 TPC-H benchmarks
 
-Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6Le4HQdXxawH5fOy-eXT7ov7EwsLIE/edit#gid=1434279808))
+Results
 
-- HorsePower
-    + Path: `exp/tpch/new-analysis`
-    + Log: `log/run2`
-- MonetDB: `exp/monetdb`
-    + Path: `exp/monetdb`
-    + Log: `log/run5`
+* sable-intel ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6Le4HQdXxawH5fOy-eXT7ov7EwsLIE/edit#gid=1003938004))
+    - HorsePower
+        + Path: `exp/tpch/fastgen`
+        + Log: `log/run4`
+    - MonetDB: `exp/monetdb`
+        + Path: `exp/monetdb`
+        + Log: `log/run5`
+* sable-tigger ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6Le4HQdXxawH5fOy-eXT7ov7EwsLIE/edit#gid=2098237371))
+    - HorsePower
+        + Path: `exp/tpch/fastgen`
+        + Log: `log/run5`
+    - MonetDB: `exp/monetdb`
+        + Path: `exp/monetdb`
+        + Log: `log/run6`
+* analysis ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6Le4HQdXxawH5fOy-eXT7ov7EwsLIE/edit#gid=1434279808))
+    - HorsePower
+        + Path: `exp/tpch/new-analysis`
+        + Log: `log/run2`
 
 
 ## 2. Experiments: Array Programs
