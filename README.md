@@ -49,21 +49,52 @@ Benchmarks
 
 - 22 TPC-H benchmarks
 
-Folder
-
-- `exp/tpch/new-analysis/`
-
 Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6Le4HQdXxawH5fOy-eXT7ov7EwsLIE/edit#gid=1434279808))
 
-- `exp/tpch/new-analysis/log/run2`
+- HorsePower
+    + Path: `exp/tpch/new-analysis`
+    + Log: `log/run2`
+- MonetDB: `exp/monetdb`
+    + Path: `exp/monetdb`
+    + Log: `log/run5`
 
 
 ## 2. Experiments: Array Programs
 
+Benchmarks
+
+- Black-Scholes
+- Morgan
+
+Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6Le4HQdXxawH5fOy-eXT7ov7EwsLIE/edit#gid=0))
+
+* Black-Scholes
+  - HorsePower
+      + Path: `exp/morgan/hir/gencode`
+      + Log: `log/run1`
+  - MATLAB
+      + Path: `exp/morgan/matlab`
+      + Log: `log/run1`
+* Morgan
+  - HorsePower
+      + Path: `exp/bs/hir/gencode`
+      + Log: `log/run1`
+  - MATLAB
+      + Path: `exp/morgan/matlab`
+      + Log: `log/run4`
+
 
 ## 3. Experiments: Queries and UDFs
 
+Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1-V5bIV2EtWUS8g26YMDidXljymy_3pA0GJMh6v70wOY/edit#gid=1173154133)
+
+- Working on migrating the data to this repository
+
+
 ## 4. Experiments: GPU Benchmarks
 
+Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6Le4HQdXxawH5fOy-eXT7ov7EwsLIE/edit#gid=1240442184))
+
+- Working on migrating the data to this repository
 
 
