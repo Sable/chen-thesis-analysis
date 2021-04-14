@@ -1,0 +1,180 @@
++ cp opt-fl/q1.h gencode.h
++ make q1 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -c main.c \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3 \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8
+gcc-8 -o "compile-q1" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q2.h gencode.h
++ make q2 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q2" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q3.h gencode.h
++ make q3 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q3" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q4.h gencode.h
++ make q4 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q4" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q5.h gencode.h
++ make q5 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q5" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q6.h gencode.h
++ make q6 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q6" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q7.h gencode.h
++ make q7 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q7" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q8.h gencode.h
++ make q8 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q8" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q9.h gencode.h
++ make q9 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q9" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q10.h gencode.h
++ make q10 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q10" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q11.h gencode.h
++ make q11 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q11" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q12.h gencode.h
++ make q12 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q12" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q13.h gencode.h
++ make q13 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q13" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q14.h gencode.h
++ make q14 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q14" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q15.h gencode.h
++ make q15 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q15" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q16.h gencode.h
++ make q16 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q16" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q17.h gencode.h
++ make q17 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q17" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q18.h gencode.h
++ make q18 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q18" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q19.h gencode.h
++ make q19 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q19" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q20.h gencode.h
++ make q20 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q20" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q21.h gencode.h
++ make q21 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q21" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
++ cp opt-fl/q22.h gencode.h
++ make q22 debug=-DNO_PROFILE_INFO avx1= avx2=
+gcc-8 -o "compile-q22" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO 
