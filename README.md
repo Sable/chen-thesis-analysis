@@ -86,7 +86,7 @@ Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6L
 
 ## 3. Experiments: Queries and UDFs
 
-Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1-V5bIV2EtWUS8g26YMDidXljymy_3pA0GJMh6v70wOY/edit#gid=1173154133)
+Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1-V5bIV2EtWUS8g26YMDidXljymy_3pA0GJMh6v70wOY/edit#gid=1173154133))
 
 - Working on migrating the data to this repository
 
