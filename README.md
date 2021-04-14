@@ -55,14 +55,14 @@ Results
     - HorsePower
         + Path: `exp/tpch/fastgen`
         + Log: `log/run4`
-    - MonetDB: `exp/monetdb`
+    - MonetDB
         + Path: `exp/monetdb`
         + Log: `log/run5`
 * sable-tigger ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6Le4HQdXxawH5fOy-eXT7ov7EwsLIE/edit#gid=2098237371))
     - HorsePower
         + Path: `exp/tpch/fastgen`
         + Log: `log/run5`
-    - MonetDB: `exp/monetdb`
+    - MonetDB
         + Path: `exp/monetdb`
         + Log: `log/run6`
 * analysis ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6Le4HQdXxawH5fOy-eXT7ov7EwsLIE/edit#gid=1434279808))
