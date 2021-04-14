@@ -1,0 +1,1278 @@
++ cp opt/q1.h gencode.h
++ make q1 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -c main.c \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3 \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8
+gcc-8 -o "compile-q1" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)    1266 kB ( 13%)
+ phase parsing                      :   0.07 ( 20%)   0.06 ( 75%)   0.13 ( 30%)    3775 kB ( 40%)
+ phase opt and generate             :   0.28 ( 80%)   0.02 ( 25%)   0.30 ( 68%)    4369 kB ( 46%)
+ callgraph construction             :   0.03 (  9%)   0.00 (  0%)   0.01 (  2%)     276 kB (  3%)
+ trivially dead code                :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df scan insns                      :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df live regs                       :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      45 kB (  0%)
+ alias stmt walking                 :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)       4 kB (  0%)
+ preprocessing                      :   0.02 (  6%)   0.03 ( 38%)   0.04 (  9%)    1456 kB ( 15%)
+ lexical analysis                   :   0.04 ( 11%)   0.01 ( 12%)   0.04 (  9%)       0 kB (  0%)
+ parser (global)                    :   0.01 (  3%)   0.00 (  0%)   0.02 (  5%)    1928 kB ( 20%)
+ parser struct body                 :   0.00 (  0%)   0.01 ( 13%)   0.00 (  0%)      89 kB (  1%)
+ parser enumerator list             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     122 kB (  1%)
+ parser function body               :   0.00 (  0%)   0.01 ( 12%)   0.01 (  2%)     149 kB (  2%)
+ parser inl. func. body             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      28 kB (  0%)
+ tree gimplify                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     214 kB (  2%)
+ tree Early VRP                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      37 kB (  0%)
+ tree PTA                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      39 kB (  0%)
+ dominator optimization             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      94 kB (  1%)
+ tree CCP                           :   0.00 (  0%)   0.01 ( 12%)   0.00 (  0%)       5 kB (  0%)
+ tree reassociation                 :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ tree PRE                           :   0.02 (  6%)   0.00 (  0%)   0.00 (  0%)     105 kB (  1%)
+ tree FRE                           :   0.00 (  0%)   0.01 ( 13%)   0.02 (  5%)      72 kB (  1%)
+ tree conservative DCE              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       9 kB (  0%)
+ tree canonical iv                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      25 kB (  0%)
+ tree loop distribution             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      48 kB (  1%)
+ dominance computation              :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ expand                             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     304 kB (  3%)
+ post expand cleanups               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       4 kB (  0%)
+ loop analysis                      :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ loop init                          :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     103 kB (  1%)
+ loop fini                          :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ CPROP                              :   0.02 (  6%)   0.00 (  0%)   0.00 (  0%)      23 kB (  0%)
+ CSE 2                              :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)       2 kB (  0%)
+ combiner                           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      73 kB (  1%)
+ integrated RA                      :   0.01 (  3%)   0.00 (  0%)   0.03 (  7%)     404 kB (  4%)
+ LRA non-specific                   :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)      78 kB (  1%)
+ LRA create live ranges             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       9 kB (  0%)
+ reload CSE regs                    :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      65 kB (  1%)
+ load CSE after reload              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       1 kB (  0%)
+ scheduling 2                       :   0.06 ( 17%)   0.00 (  0%)   0.03 (  7%)      78 kB (  1%)
+ initialize rtl                     :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.00 (  0%)   0.00 (  0%)   0.03 (  7%)      45 kB (  0%)
+ TOTAL                              :   0.35          0.08          0.44           9420 kB
+
+real	0m1.087s
+user	0m0.772s
+sys	0m0.180s
++ cp opt/q2.h gencode.h
++ make q2 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q2" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)    1266 kB ( 11%)
+ phase parsing                      :   0.07 ( 14%)   0.07 ( 70%)   0.14 ( 22%)    3912 kB ( 33%)
+ phase opt and generate             :   0.44 ( 86%)   0.03 ( 30%)   0.48 ( 76%)    6834 kB ( 57%)
+ dump files                         :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ callgraph construction             :   0.00 (  0%)   0.00 (  0%)   0.02 (  3%)     673 kB (  6%)
+ callgraph optimization             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       1 kB (  0%)
+ df scan insns                      :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df multiple defs                   :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df reaching defs                   :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df live regs                       :   0.01 (  2%)   0.00 (  0%)   0.02 (  3%)       0 kB (  0%)
+ df must-initialized regs           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df use-def / def-use chains        :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      81 kB (  1%)
+ alias analysis                     :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     294 kB (  2%)
+ alias stmt walking                 :   0.01 (  2%)   0.00 (  0%)   0.03 (  5%)       0 kB (  0%)
+ preprocessing                      :   0.01 (  2%)   0.02 ( 20%)   0.07 ( 11%)    1494 kB ( 12%)
+ lexical analysis                   :   0.03 (  6%)   0.03 ( 30%)   0.04 (  6%)       0 kB (  0%)
+ parser (global)                    :   0.03 (  6%)   0.01 ( 10%)   0.02 (  3%)    1944 kB ( 16%)
+ parser function body               :   0.00 (  0%)   0.01 ( 10%)   0.01 (  2%)     232 kB (  2%)
+ integration                        :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     274 kB (  2%)
+ tree CFG cleanup                   :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       1 kB (  0%)
+ tree VRP                           :   0.02 (  4%)   0.00 (  0%)   0.01 (  2%)     223 kB (  2%)
+ tree PTA                           :   0.00 (  0%)   0.01 ( 10%)   0.00 (  0%)      64 kB (  1%)
+ tree SSA incremental               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      22 kB (  0%)
+ tree operand scan                  :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     394 kB (  3%)
+ dominator optimization             :   0.00 (  0%)   0.01 ( 10%)   0.01 (  2%)     130 kB (  1%)
+ tree SRA                           :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ tree CCP                           :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       9 kB (  0%)
+ tree PRE                           :   0.01 (  2%)   0.00 (  0%)   0.03 (  5%)     138 kB (  1%)
+ tree FRE                           :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      77 kB (  1%)
+ tree conservative DCE              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      11 kB (  0%)
+ tree DSE                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ tree loop invariant motion         :   0.01 (  2%)   0.01 ( 10%)   0.00 (  0%)       1 kB (  0%)
+ tree iv optimization               :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     112 kB (  1%)
+ control dependences                :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ expand                             :   0.01 (  2%)   0.00 (  0%)   0.02 (  3%)     496 kB (  4%)
+ CSE                                :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       6 kB (  0%)
+ dead code elimination              :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ dead store elim1                   :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      42 kB (  0%)
+ dead store elim2                   :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      71 kB (  1%)
+ loop init                          :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     179 kB (  1%)
+ loop invariant motion              :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ CPROP                              :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      27 kB (  0%)
+ PRE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       2 kB (  0%)
+ CSE 2                              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       3 kB (  0%)
+ branch prediction                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      58 kB (  0%)
+ combiner                           :   0.00 (  0%)   0.00 (  0%)   0.02 (  3%)     130 kB (  1%)
+ integrated RA                      :   0.05 ( 10%)   0.00 (  0%)   0.03 (  5%)     616 kB (  5%)
+ LRA non-specific                   :   0.00 (  0%)   0.00 (  0%)   0.02 (  3%)     124 kB (  1%)
+ LRA create live ranges             :   0.01 (  2%)   0.00 (  0%)   0.02 (  3%)      15 kB (  0%)
+ LRA hard reg assignment            :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ reload CSE regs                    :   0.02 (  4%)   0.00 (  0%)   0.02 (  3%)      93 kB (  1%)
+ thread pro- & epilogue             :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      39 kB (  0%)
+ hard reg cprop                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ scheduling 2                       :   0.03 (  6%)   0.00 (  0%)   0.03 (  5%)      93 kB (  1%)
+ reorder blocks                     :   0.00 (  0%)   0.00 (  0%)   0.02 (  3%)       9 kB (  0%)
+ initialize rtl                     :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.02 (  4%)   0.00 (  0%)   0.01 (  2%)      74 kB (  1%)
+ address taken                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ repair loop structures             :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ TOTAL                              :   0.51          0.10          0.63          12021 kB
+
+real	0m0.886s
+user	0m0.613s
+sys	0m0.159s
++ cp opt/q3.h gencode.h
++ make q3 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q3" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)    1266 kB ( 13%)
+ phase parsing                      :   0.06 ( 19%)   0.07 ( 70%)   0.13 ( 30%)    3770 kB ( 40%)
+ phase opt and generate             :   0.26 ( 81%)   0.03 ( 30%)   0.30 ( 68%)    4432 kB ( 47%)
+ callgraph construction             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     271 kB (  3%)
+ ipa icf                            :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ trivially dead code                :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df reaching defs                   :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df live regs                       :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ alias analysis                     :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)     162 kB (  2%)
+ alias stmt walking                 :   0.00 (  0%)   0.01 ( 10%)   0.01 (  2%)       0 kB (  0%)
+ preprocessing                      :   0.04 ( 12%)   0.04 ( 40%)   0.06 ( 14%)    1442 kB ( 15%)
+ lexical analysis                   :   0.01 (  3%)   0.03 ( 30%)   0.04 (  9%)       0 kB (  0%)
+ parser (global)                    :   0.01 (  3%)   0.00 (  0%)   0.03 (  7%)    1933 kB ( 20%)
+ tree gimplify                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     224 kB (  2%)
+ tree CFG cleanup                   :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)       1 kB (  0%)
+ tree VRP                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     160 kB (  2%)
+ tree Early VRP                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      49 kB (  1%)
+ dominator optimization             :   0.01 (  3%)   0.00 (  0%)   0.02 (  5%)      90 kB (  1%)
+ tree PRE                           :   0.02 (  6%)   0.00 (  0%)   0.00 (  0%)      80 kB (  1%)
+ tree FRE                           :   0.02 (  6%)   0.00 (  0%)   0.02 (  5%)      52 kB (  1%)
+ tree loop unswitching              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      38 kB (  0%)
+ complete unrolling                 :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     125 kB (  1%)
+ tree slp vectorization             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     176 kB (  2%)
+ expand                             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     316 kB (  3%)
+ CSE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       5 kB (  0%)
+ CPROP                              :   0.01 (  3%)   0.01 ( 10%)   0.00 (  0%)      23 kB (  0%)
+ PRE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       2 kB (  0%)
+ combiner                           :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      72 kB (  1%)
+ integrated RA                      :   0.02 (  6%)   0.00 (  0%)   0.03 (  7%)     399 kB (  4%)
+ LRA non-specific                   :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      75 kB (  1%)
+ LRA create live ranges             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       7 kB (  0%)
+ LRA hard reg assignment            :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ reload CSE regs                    :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      56 kB (  1%)
+ ree                                :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       1 kB (  0%)
+ thread pro- & epilogue             :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)      25 kB (  0%)
+ scheduling 2                       :   0.04 ( 13%)   0.00 (  0%)   0.01 (  2%)      78 kB (  1%)
+ tree if-combine                    :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ initialize rtl                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.01 (  3%)   0.00 (  0%)   0.02 (  5%)      52 kB (  1%)
+ address taken                      :   0.00 (  0%)   0.01 ( 10%)   0.00 (  0%)       0 kB (  0%)
+ TOTAL                              :   0.32          0.10          0.44           9477 kB
+
+real	0m0.695s
+user	0m0.422s
+sys	0m0.160s
++ cp opt/q4.h gencode.h
++ make q4 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q4" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)    1266 kB ( 19%)
+ phase parsing                      :   0.06 ( 38%)   0.06 ( 86%)   0.13 ( 54%)    3640 kB ( 56%)
+ phase opt and generate             :   0.10 ( 62%)   0.01 ( 14%)   0.11 ( 46%)    1598 kB ( 25%)
+ ipa inlining heuristics            :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)       7 kB (  0%)
+ df scan insns                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)       0 kB (  0%)
+ alias stmt walking                 :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)       0 kB (  0%)
+ preprocessing                      :   0.01 (  6%)   0.02 ( 29%)   0.05 ( 21%)    1404 kB ( 22%)
+ lexical analysis                   :   0.01 (  6%)   0.03 ( 43%)   0.03 ( 13%)       0 kB (  0%)
+ parser (global)                    :   0.03 ( 19%)   0.01 ( 14%)   0.04 ( 17%)    1923 kB ( 30%)
+ parser struct body                 :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)      89 kB (  1%)
+ parser enumerator list             :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)     122 kB (  2%)
+ integration                        :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)      53 kB (  1%)
+ tree VRP                           :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)      59 kB (  1%)
+ tree PTA                           :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)      11 kB (  0%)
+ dominator optimization             :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)      25 kB (  0%)
+ tree FRE                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)      19 kB (  0%)
+ tree DSE                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)       0 kB (  0%)
+ tree loop invariant motion         :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ tree canonical iv                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)      18 kB (  0%)
+ CSE                                :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ CPROP                              :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)       5 kB (  0%)
+ branch prediction                  :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)      16 kB (  0%)
+ integrated RA                      :   0.00 (  0%)   0.01 ( 14%)   0.00 (  0%)     155 kB (  2%)
+ LRA create live ranges             :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)       1 kB (  0%)
+ reload CSE regs                    :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)      15 kB (  0%)
+ if-conversion 2                    :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)       0 kB (  0%)
+ scheduling 2                       :   0.01 (  6%)   0.00 (  0%)   0.01 (  4%)      61 kB (  1%)
+ initialize rtl                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)      12 kB (  0%)
+ rest of compilation                :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)      21 kB (  0%)
+ TOTAL                              :   0.16          0.07          0.24           6513 kB
+
+real	0m0.489s
+user	0m0.255s
+sys	0m0.125s
++ cp opt/q5.h gencode.h
++ make q5 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q5" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)    1266 kB ( 11%)
+ phase parsing                      :   0.06 ( 14%)   0.06 ( 75%)   0.14 ( 26%)    3828 kB ( 35%)
+ phase opt and generate             :   0.37 ( 84%)   0.02 ( 25%)   0.39 ( 74%)    5981 kB ( 54%)
+ callgraph construction             :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     374 kB (  3%)
+ callgraph optimization             :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       1 kB (  0%)
+ ipa inlining heuristics            :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      23 kB (  0%)
+ cfg cleanup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      11 kB (  0%)
+ df scan insns                      :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df live regs                       :   0.02 (  5%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df must-initialized regs           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      66 kB (  1%)
+ alias analysis                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     235 kB (  2%)
+ alias stmt walking                 :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)       0 kB (  0%)
+ preprocessing                      :   0.01 (  2%)   0.02 ( 25%)   0.06 ( 11%)    1459 kB ( 13%)
+ lexical analysis                   :   0.02 (  5%)   0.04 ( 50%)   0.03 (  6%)       0 kB (  0%)
+ parser (global)                    :   0.01 (  2%)   0.00 (  0%)   0.04 (  8%)    1944 kB ( 18%)
+ parser struct body                 :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      89 kB (  1%)
+ parser function body               :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     184 kB (  2%)
+ integration                        :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     447 kB (  4%)
+ tree CFG cleanup                   :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ tree VRP                           :   0.02 (  5%)   0.01 ( 12%)   0.02 (  4%)     219 kB (  2%)
+ tree Early VRP                     :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)      62 kB (  1%)
+ tree SSA other                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       3 kB (  0%)
+ tree operand scan                  :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)     359 kB (  3%)
+ dominator optimization             :   0.04 (  9%)   0.00 (  0%)   0.03 (  6%)     106 kB (  1%)
+ tree PRE                           :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     108 kB (  1%)
+ tree FRE                           :   0.02 (  5%)   0.00 (  0%)   0.01 (  2%)      59 kB (  1%)
+ tree backward propagate            :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ tree canonical iv                  :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      63 kB (  1%)
+ complete unrolling                 :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     161 kB (  1%)
+ tree iv optimization               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     139 kB (  1%)
+ dominance computation              :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ expand                             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     415 kB (  4%)
+ CSE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       6 kB (  0%)
+ dead code elimination              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ CPROP                              :   0.02 (  5%)   0.00 (  0%)   0.02 (  4%)      33 kB (  0%)
+ PRE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       2 kB (  0%)
+ combiner                           :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)     120 kB (  1%)
+ integrated RA                      :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     527 kB (  5%)
+ LRA non-specific                   :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      73 kB (  1%)
+ LRA virtuals elimination           :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      19 kB (  0%)
+ LRA create live ranges             :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)      10 kB (  0%)
+ reload CSE regs                    :   0.01 (  2%)   0.00 (  0%)   0.02 (  4%)      74 kB (  1%)
+ scheduling 2                       :   0.02 (  5%)   0.01 ( 13%)   0.04 (  8%)      83 kB (  1%)
+ shorten branches                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ final                              :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)      55 kB (  0%)
+ initialize rtl                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.02 (  5%)   0.00 (  0%)   0.03 (  6%)      73 kB (  1%)
+ TOTAL                              :   0.44          0.08          0.53          11085 kB
+
+real	0m0.783s
+user	0m0.532s
+sys	0m0.140s
++ cp opt/q6.h gencode.h
++ make q6 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q6" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)    1266 kB ( 22%)
+ phase parsing                      :   0.05 ( 50%)   0.06 ( 86%)   0.12 ( 63%)    3597 kB ( 64%)
+ phase opt and generate             :   0.05 ( 50%)   0.01 ( 14%)   0.06 ( 32%)     757 kB ( 13%)
+ callgraph construction             :   0.01 ( 10%)   0.00 (  0%)   0.00 (  0%)      59 kB (  1%)
+ df live regs                       :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)       0 kB (  0%)
+ register information               :   0.01 ( 10%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ preprocessing                      :   0.01 ( 10%)   0.05 ( 71%)   0.04 ( 21%)    1398 kB ( 25%)
+ lexical analysis                   :   0.01 ( 10%)   0.00 (  0%)   0.04 ( 21%)       0 kB (  0%)
+ parser (global)                    :   0.02 ( 20%)   0.01 ( 14%)   0.02 ( 11%)    1916 kB ( 34%)
+ parser struct body                 :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)      89 kB (  2%)
+ parser inl. func. body             :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)      28 kB (  1%)
+ tree CFG cleanup                   :   0.01 ( 10%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ tree VRP                           :   0.00 (  0%)   0.01 ( 14%)   0.01 (  5%)      21 kB (  0%)
+ tree Early VRP                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)       9 kB (  0%)
+ integrated RA                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)      77 kB (  1%)
+ symout                             :   0.01 ( 10%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ initialize rtl                     :   0.01 ( 10%)   0.00 (  0%)   0.01 (  5%)      12 kB (  0%)
+ rest of compilation                :   0.01 ( 10%)   0.00 (  0%)   0.01 (  5%)       9 kB (  0%)
+ TOTAL                              :   0.10          0.07          0.19           5630 kB
+
+real	0m0.429s
+user	0m0.202s
+sys	0m0.118s
++ cp opt/q7.h gencode.h
++ make q7 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q7" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)    1266 kB ( 10%)
+ phase parsing                      :   0.06 ( 13%)   0.07 ( 50%)   0.14 ( 23%)    3897 kB ( 32%)
+ phase opt and generate             :   0.40 ( 87%)   0.07 ( 50%)   0.46 ( 75%)    7160 kB ( 58%)
+ callgraph construction             :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     692 kB (  6%)
+ ipa function summary               :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     146 kB (  1%)
+ cfg construction                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       9 kB (  0%)
+ cfg cleanup                        :   0.01 (  2%)   0.01 (  7%)   0.00 (  0%)      12 kB (  0%)
+ df scan insns                      :   0.00 (  0%)   0.01 (  7%)   0.01 (  2%)       0 kB (  0%)
+ df multiple defs                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df live regs                       :   0.02 (  4%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df live&initialized regs           :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      78 kB (  1%)
+ alias stmt walking                 :   0.01 (  2%)   0.00 (  0%)   0.03 (  5%)       0 kB (  0%)
+ rebuild jump labels                :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ preprocessing                      :   0.01 (  2%)   0.03 ( 21%)   0.07 ( 11%)    1486 kB ( 12%)
+ lexical analysis                   :   0.03 (  7%)   0.01 (  7%)   0.02 (  3%)       0 kB (  0%)
+ parser (global)                    :   0.01 (  2%)   0.03 ( 21%)   0.02 (  3%)    1946 kB ( 16%)
+ parser struct body                 :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      89 kB (  1%)
+ parser function body               :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     223 kB (  2%)
+ parser inl. func. body             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      28 kB (  0%)
+ inline parameters                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     209 kB (  2%)
+ integration                        :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     247 kB (  2%)
+ tree gimplify                      :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     327 kB (  3%)
+ tree VRP                           :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     239 kB (  2%)
+ tree PTA                           :   0.01 (  2%)   0.02 ( 14%)   0.01 (  2%)      60 kB (  0%)
+ tree operand scan                  :   0.00 (  0%)   0.01 (  7%)   0.01 (  2%)     449 kB (  4%)
+ dominator optimization             :   0.00 (  0%)   0.01 (  7%)   0.02 (  3%)     131 kB (  1%)
+ tree PRE                           :   0.01 (  2%)   0.00 (  0%)   0.02 (  3%)     119 kB (  1%)
+ tree FRE                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      74 kB (  1%)
+ tree forward propagate             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      21 kB (  0%)
+ tree phiprop                       :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ tree conservative DCE              :   0.03 (  7%)   0.00 (  0%)   0.01 (  2%)      13 kB (  0%)
+ tree loop unswitching              :   0.00 (  0%)   0.01 (  7%)   0.00 (  0%)      62 kB (  1%)
+ complete unrolling                 :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     175 kB (  1%)
+ tree vectorization                 :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     126 kB (  1%)
+ tree iv optimization               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     165 kB (  1%)
+ tree switch lowering               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ gimple widening/fma detection      :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       4 kB (  0%)
+ dominance computation              :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ expand                             :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     485 kB (  4%)
+ loop init                          :   0.02 (  4%)   0.00 (  0%)   0.00 (  0%)     168 kB (  1%)
+ CPROP                              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      35 kB (  0%)
+ CSE 2                              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       2 kB (  0%)
+ combiner                           :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     137 kB (  1%)
+ integrated RA                      :   0.05 ( 11%)   0.00 (  0%)   0.02 (  3%)     637 kB (  5%)
+ LRA non-specific                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      99 kB (  1%)
+ LRA create live ranges             :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      14 kB (  0%)
+ LRA hard reg assignment            :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ reload CSE regs                    :   0.03 (  7%)   0.00 (  0%)   0.03 (  5%)      95 kB (  1%)
+ load CSE after reload              :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ hard reg cprop                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ scheduling 2                       :   0.03 (  7%)   0.00 (  0%)   0.03 (  5%)      96 kB (  1%)
+ machine dep reorg                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ final                              :   0.02 (  4%)   0.00 (  0%)   0.00 (  0%)      60 kB (  0%)
+ initialize rtl                     :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.00 (  0%)   0.00 (  0%)   0.02 (  3%)      81 kB (  1%)
+ TOTAL                              :   0.46          0.14          0.61          12332 kB
+
+real	0m0.863s
+user	0m0.595s
+sys	0m0.158s
++ cp opt/q8.h gencode.h
++ make q8 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q8" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)    1266 kB ( 10%)
+ phase parsing                      :   0.05 ( 10%)   0.08 ( 62%)   0.15 ( 23%)    3913 kB ( 31%)
+ phase lang. deferred               :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ phase opt and generate             :   0.44 ( 88%)   0.05 ( 38%)   0.50 ( 76%)    7519 kB ( 59%)
+ callgraph construction             :   0.00 (  0%)   0.00 (  0%)   0.02 (  3%)     709 kB (  6%)
+ callgraph optimization             :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       2 kB (  0%)
+ cfg cleanup                        :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      14 kB (  0%)
+ trivially dead code                :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df live regs                       :   0.00 (  0%)   0.00 (  0%)   0.02 (  3%)       0 kB (  0%)
+ df live&initialized regs           :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.02 (  4%)   0.00 (  0%)   0.01 (  2%)      85 kB (  1%)
+ alias analysis                     :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     294 kB (  2%)
+ preprocessing                      :   0.02 (  4%)   0.02 ( 15%)   0.07 ( 11%)    1490 kB ( 12%)
+ lexical analysis                   :   0.01 (  2%)   0.05 ( 38%)   0.02 (  3%)       0 kB (  0%)
+ parser (global)                    :   0.03 (  6%)   0.01 (  8%)   0.05 (  8%)    1948 kB ( 15%)
+ parser inl. func. body             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      28 kB (  0%)
+ inline parameters                  :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     218 kB (  2%)
+ tree gimplify                      :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     345 kB (  3%)
+ tree CFG cleanup                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ tree VRP                           :   0.00 (  0%)   0.00 (  0%)   0.02 (  3%)     269 kB (  2%)
+ tree Early VRP                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      76 kB (  1%)
+ tree PTA                           :   0.01 (  2%)   0.01 (  8%)   0.01 (  2%)      58 kB (  0%)
+ tree SSA rewrite                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     170 kB (  1%)
+ tree operand scan                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     471 kB (  4%)
+ dominator optimization             :   0.02 (  4%)   0.01 (  8%)   0.03 (  5%)     139 kB (  1%)
+ tree CCP                           :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      10 kB (  0%)
+ tree PRE                           :   0.02 (  4%)   0.00 (  0%)   0.01 (  2%)     138 kB (  1%)
+ tree FRE                           :   0.00 (  0%)   0.00 (  0%)   0.02 (  3%)      74 kB (  1%)
+ tree conservative DCE              :   0.01 (  2%)   0.01 (  8%)   0.00 (  0%)      14 kB (  0%)
+ tree aggressive DCE                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      54 kB (  0%)
+ tree loop invariant motion         :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ tree loop unswitching              :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      64 kB (  1%)
+ complete unrolling                 :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     211 kB (  2%)
+ tree iv optimization               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     177 kB (  1%)
+ expand                             :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     526 kB (  4%)
+ forward prop                       :   0.00 (  0%)   0.01 (  8%)   0.00 (  0%)      54 kB (  0%)
+ CSE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       8 kB (  0%)
+ dead store elim2                   :   0.02 (  4%)   0.00 (  0%)   0.00 (  0%)      67 kB (  1%)
+ loop init                          :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     203 kB (  2%)
+ CPROP                              :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      42 kB (  0%)
+ PRE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       4 kB (  0%)
+ CSE 2                              :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)       3 kB (  0%)
+ branch prediction                  :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      67 kB (  1%)
+ combiner                           :   0.02 (  4%)   0.00 (  0%)   0.01 (  2%)     140 kB (  1%)
+ if-conversion                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       4 kB (  0%)
+ integrated RA                      :   0.04 (  8%)   0.01 (  8%)   0.03 (  5%)     683 kB (  5%)
+ LRA reload inheritance             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      33 kB (  0%)
+ LRA create live ranges             :   0.02 (  4%)   0.00 (  0%)   0.02 (  3%)      12 kB (  0%)
+ LRA hard reg assignment            :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ reload CSE regs                    :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      96 kB (  1%)
+ scheduling 2                       :   0.04 (  8%)   0.00 (  0%)   0.06 (  9%)      90 kB (  1%)
+ final                              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      69 kB (  1%)
+ straight-line strength reduction   :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       7 kB (  0%)
+ initialize rtl                     :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.05 ( 10%)   0.00 (  0%)   0.02 (  3%)      88 kB (  1%)
+ remove unused locals               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ TOTAL                              :   0.50          0.13          0.66          12707 kB
+
+real	0m0.905s
+user	0m0.611s
+sys	0m0.180s
++ cp opt/q9.h gencode.h
++ make q9 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q9" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)    1266 kB ( 12%)
+ phase parsing                      :   0.08 ( 19%)   0.06 ( 67%)   0.14 ( 27%)    3837 kB ( 36%)
+ phase opt and generate             :   0.34 ( 81%)   0.03 ( 33%)   0.37 ( 71%)    5667 kB ( 53%)
+ callgraph construction             :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     363 kB (  3%)
+ ipa function summary               :   0.01 (  2%)   0.01 ( 11%)   0.00 (  0%)     124 kB (  1%)
+ df live regs                       :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df live&initialized regs           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      60 kB (  1%)
+ alias stmt walking                 :   0.03 (  7%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ preprocessing                      :   0.03 (  7%)   0.03 ( 33%)   0.06 ( 12%)    1469 kB ( 14%)
+ lexical analysis                   :   0.02 (  5%)   0.03 ( 33%)   0.03 (  6%)       0 kB (  0%)
+ parser (global)                    :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)    1941 kB ( 18%)
+ parser struct body                 :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      89 kB (  1%)
+ parser enumerator list             :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)     122 kB (  1%)
+ parser function body               :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     185 kB (  2%)
+ parser inl. func. body             :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      28 kB (  0%)
+ inline parameters                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     175 kB (  2%)
+ integration                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     457 kB (  4%)
+ tree CFG cleanup                   :   0.01 (  2%)   0.00 (  0%)   0.02 (  4%)       0 kB (  0%)
+ tree Early VRP                     :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)      58 kB (  1%)
+ dominator optimization             :   0.01 (  2%)   0.00 (  0%)   0.02 (  4%)     101 kB (  1%)
+ tree CCP                           :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       7 kB (  0%)
+ tree PRE                           :   0.02 (  5%)   0.00 (  0%)   0.01 (  2%)     105 kB (  1%)
+ tree forward propagate             :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      15 kB (  0%)
+ tree aggressive DCE                :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      40 kB (  0%)
+ tree canonical iv                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      64 kB (  1%)
+ tree loop unswitching              :   0.00 (  0%)   0.01 ( 11%)   0.00 (  0%)      54 kB (  1%)
+ tree vectorization                 :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      95 kB (  1%)
+ tree slp vectorization             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     229 kB (  2%)
+ tree iv optimization               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     141 kB (  1%)
+ predictive commoning               :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)      40 kB (  0%)
+ out of ssa                         :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ varconst                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ CSE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       4 kB (  0%)
+ dead store elim2                   :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)      49 kB (  0%)
+ loop init                          :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     145 kB (  1%)
+ CPROP                              :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      22 kB (  0%)
+ PRE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       1 kB (  0%)
+ CSE 2                              :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)       2 kB (  0%)
+ branch prediction                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      49 kB (  0%)
+ combiner                           :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      86 kB (  1%)
+ integrated RA                      :   0.03 (  7%)   0.00 (  0%)   0.03 (  6%)     452 kB (  4%)
+ LRA create live ranges             :   0.00 (  0%)   0.01 ( 11%)   0.03 (  6%)      11 kB (  0%)
+ LRA hard reg assignment            :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ LRA rematerialization              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ reload CSE regs                    :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      69 kB (  1%)
+ load CSE after reload              :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ scheduling 2                       :   0.04 ( 10%)   0.00 (  0%)   0.03 (  6%)      80 kB (  1%)
+ shorten branches                   :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ initialize rtl                     :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.02 (  5%)   0.00 (  0%)   0.01 (  2%)      63 kB (  1%)
+ TOTAL                              :   0.42          0.09          0.52          10780 kB
+
+real	0m0.771s
+user	0m0.527s
+sys	0m0.130s
++ cp opt/q10.h gencode.h
++ make q10 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q10" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)    1266 kB ( 10%)
+ phase parsing                      :   0.07 ( 13%)   0.07 ( 64%)   0.15 ( 23%)    3919 kB ( 31%)
+ phase opt and generate             :   0.45 ( 87%)   0.04 ( 36%)   0.48 ( 75%)    7356 kB ( 59%)
+ dump files                         :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ callgraph construction             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     670 kB (  5%)
+ ipa function summary               :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     141 kB (  1%)
+ df scan insns                      :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df multiple defs                   :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df live regs                       :   0.01 (  2%)   0.00 (  0%)   0.02 (  3%)       0 kB (  0%)
+ df live&initialized regs           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      79 kB (  1%)
+ alias analysis                     :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     330 kB (  3%)
+ alias stmt walking                 :   0.02 (  4%)   0.00 (  0%)   0.04 (  6%)       0 kB (  0%)
+ register scan                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      18 kB (  0%)
+ preprocessing                      :   0.03 (  6%)   0.02 ( 18%)   0.07 ( 11%)    1508 kB ( 12%)
+ lexical analysis                   :   0.01 (  2%)   0.02 ( 18%)   0.05 (  8%)       0 kB (  0%)
+ parser (global)                    :   0.02 (  4%)   0.02 ( 18%)   0.01 (  2%)    1941 kB ( 15%)
+ parser function body               :   0.01 (  2%)   0.01 (  9%)   0.02 (  3%)     229 kB (  2%)
+ inline parameters                  :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     194 kB (  2%)
+ tree gimplify                      :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     365 kB (  3%)
+ tree CFG cleanup                   :   0.02 (  4%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ tree VRP                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     236 kB (  2%)
+ tree Early VRP                     :   0.00 (  0%)   0.01 (  9%)   0.00 (  0%)      63 kB (  1%)
+ tree PTA                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      71 kB (  1%)
+ tree SSA other                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       3 kB (  0%)
+ tree operand scan                  :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)     381 kB (  3%)
+ dominator optimization             :   0.02 (  4%)   0.01 (  9%)   0.03 (  5%)     154 kB (  1%)
+ tree CCP                           :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)       9 kB (  0%)
+ tree split crit edges              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      21 kB (  0%)
+ tree PRE                           :   0.01 (  2%)   0.00 (  0%)   0.00 (  0%)     138 kB (  1%)
+ tree FRE                           :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      88 kB (  1%)
+ tree forward propagate             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      20 kB (  0%)
+ tree conservative DCE              :   0.00 (  0%)   0.01 (  9%)   0.00 (  0%)      17 kB (  0%)
+ tree aggressive DCE                :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      46 kB (  0%)
+ tree canonical iv                  :   0.00 (  0%)   0.01 (  9%)   0.00 (  0%)      40 kB (  0%)
+ tree iv optimization               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     117 kB (  1%)
+ tree copy headers                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       7 kB (  0%)
+ expand                             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     519 kB (  4%)
+ dead store elim1                   :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      56 kB (  0%)
+ dead store elim2                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      89 kB (  1%)
+ loop init                          :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     168 kB (  1%)
+ CPROP                              :   0.02 (  4%)   0.00 (  0%)   0.02 (  3%)      39 kB (  0%)
+ combiner                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     170 kB (  1%)
+ integrated RA                      :   0.03 (  6%)   0.00 (  0%)   0.04 (  6%)     766 kB (  6%)
+ LRA non-specific                   :   0.03 (  6%)   0.00 (  0%)   0.02 (  3%)     134 kB (  1%)
+ LRA hard reg assignment            :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ reload CSE regs                    :   0.02 (  4%)   0.00 (  0%)   0.02 (  3%)     109 kB (  1%)
+ load CSE after reload              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ thread pro- & epilogue             :   0.01 (  2%)   0.00 (  0%)   0.01 (  2%)      38 kB (  0%)
+ scheduling 2                       :   0.05 ( 10%)   0.00 (  0%)   0.05 (  8%)      91 kB (  1%)
+ final                              :   0.02 (  4%)   0.00 (  0%)   0.00 (  0%)      61 kB (  0%)
+ initialize rtl                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ tree loop if-conversion            :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       2 kB (  0%)
+ rest of compilation                :   0.06 ( 12%)   0.00 (  0%)   0.00 (  0%)      80 kB (  1%)
+ TOTAL                              :   0.52          0.11          0.64          12551 kB
+
+real	0m0.897s
+user	0m0.622s
+sys	0m0.160s
++ cp opt/q11.h gencode.h
++ make q11 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q11" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)    1266 kB ( 12%)
+ phase parsing                      :   0.07 ( 18%)   0.06 ( 67%)   0.14 ( 28%)    3767 kB ( 36%)
+ phase opt and generate             :   0.32 ( 82%)   0.03 ( 33%)   0.35 ( 70%)    5327 kB ( 51%)
+ dump files                         :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ callgraph optimization             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       1 kB (  0%)
+ ipa cp                             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ df scan insns                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df live regs                       :   0.02 (  5%)   0.01 ( 11%)   0.01 (  2%)       0 kB (  0%)
+ df must-initialized regs           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      63 kB (  1%)
+ register information               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ alias analysis                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     205 kB (  2%)
+ alias stmt walking                 :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       1 kB (  0%)
+ rebuild jump labels                :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ preprocessing                      :   0.00 (  0%)   0.04 ( 44%)   0.06 ( 12%)    1435 kB ( 14%)
+ lexical analysis                   :   0.04 ( 10%)   0.00 (  0%)   0.05 ( 10%)       0 kB (  0%)
+ parser (global)                    :   0.02 (  5%)   0.02 ( 22%)   0.01 (  2%)    1935 kB ( 19%)
+ parser struct body                 :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      89 kB (  1%)
+ parser function body               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     155 kB (  1%)
+ tree gimplify                      :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     225 kB (  2%)
+ tree VRP                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     221 kB (  2%)
+ tree PTA                           :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      29 kB (  0%)
+ tree SSA other                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       2 kB (  0%)
+ dominator optimization             :   0.00 (  0%)   0.00 (  0%)   0.03 (  6%)     108 kB (  1%)
+ isolate eroneous paths             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ tree PRE                           :   0.02 (  5%)   0.01 ( 11%)   0.00 (  0%)      88 kB (  1%)
+ tree FRE                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      48 kB (  0%)
+ tree forward propagate             :   0.00 (  0%)   0.01 ( 11%)   0.00 (  0%)      19 kB (  0%)
+ tree DSE                           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ tree canonical iv                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      46 kB (  0%)
+ complete unrolling                 :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     200 kB (  2%)
+ tree vectorization                 :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     133 kB (  1%)
+ tree slp vectorization             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     159 kB (  2%)
+ tree loop distribution             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      48 kB (  0%)
+ predictive commoning               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      39 kB (  0%)
+ out of ssa                         :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       2 kB (  0%)
+ expand                             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     408 kB (  4%)
+ varconst                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ forward prop                       :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)      50 kB (  0%)
+ CSE                                :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       6 kB (  0%)
+ dead store elim1                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      38 kB (  0%)
+ dead store elim2                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      48 kB (  0%)
+ loop invariant motion              :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ CPROP                              :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)      39 kB (  0%)
+ PRE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       3 kB (  0%)
+ CSE 2                              :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)       3 kB (  0%)
+ branch prediction                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      52 kB (  1%)
+ if-conversion                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       3 kB (  0%)
+ integrated RA                      :   0.03 (  8%)   0.00 (  0%)   0.02 (  4%)     583 kB (  6%)
+ LRA non-specific                   :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)      57 kB (  1%)
+ LRA reload inheritance             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      30 kB (  0%)
+ LRA create live ranges             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       7 kB (  0%)
+ reload CSE regs                    :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      69 kB (  1%)
+ thread pro- & epilogue             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      26 kB (  0%)
+ scheduling 2                       :   0.01 (  3%)   0.00 (  0%)   0.02 (  4%)      79 kB (  1%)
+ shorten branches                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ final                              :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      54 kB (  1%)
+ initialize rtl                     :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)      67 kB (  1%)
+ TOTAL                              :   0.39          0.09          0.50          10370 kB
+
+real	0m0.747s
+user	0m0.489s
+sys	0m0.146s
++ cp opt/q12.h gencode.h
++ make q12 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q12" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)    1266 kB ( 14%)
+ phase parsing                      :   0.07 ( 24%)   0.05 ( 56%)   0.13 ( 32%)    3753 kB ( 42%)
+ phase opt and generate             :   0.22 ( 76%)   0.04 ( 44%)   0.26 ( 65%)    3804 kB ( 43%)
+ dump files                         :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ ipa function summary               :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      70 kB (  1%)
+ ipa inlining heuristics            :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      12 kB (  0%)
+ df scan insns                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ df live regs                       :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.01 (  3%)   0.00 (  0%)   0.01 (  3%)      42 kB (  0%)
+ alias stmt walking                 :   0.00 (  0%)   0.01 ( 11%)   0.00 (  0%)       0 kB (  0%)
+ register scan                      :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       1 kB (  0%)
+ preprocessing                      :   0.05 ( 17%)   0.02 ( 22%)   0.05 ( 12%)    1455 kB ( 16%)
+ lexical analysis                   :   0.02 (  7%)   0.02 ( 22%)   0.05 ( 13%)       0 kB (  0%)
+ parser (global)                    :   0.00 (  0%)   0.01 ( 11%)   0.01 (  3%)    1930 kB ( 22%)
+ parser struct body                 :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)      89 kB (  1%)
+ tree gimplify                      :   0.00 (  0%)   0.01 ( 11%)   0.00 (  0%)     160 kB (  2%)
+ tree CFG cleanup                   :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       2 kB (  0%)
+ tree VRP                           :   0.01 (  3%)   0.01 ( 11%)   0.00 (  0%)     145 kB (  2%)
+ tree SSA incremental               :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      16 kB (  0%)
+ tree operand scan                  :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)     247 kB (  3%)
+ dominator optimization             :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)      77 kB (  1%)
+ backwards jump threading           :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ tree PRE                           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      72 kB (  1%)
+ tree FRE                           :   0.02 (  7%)   0.00 (  0%)   0.01 (  3%)      38 kB (  0%)
+ tree aggressive DCE                :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      34 kB (  0%)
+ tree canonical iv                  :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      36 kB (  0%)
+ complete unrolling                 :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     105 kB (  1%)
+ tree vectorization                 :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      83 kB (  1%)
+ dominance computation              :   0.00 (  0%)   0.01 ( 11%)   0.00 (  0%)       0 kB (  0%)
+ loop init                          :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)     122 kB (  1%)
+ loop invariant motion              :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ loop fini                          :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ CPROP                              :   0.01 (  3%)   0.00 (  0%)   0.01 (  3%)      26 kB (  0%)
+ CSE 2                              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       2 kB (  0%)
+ integrated RA                      :   0.02 (  7%)   0.00 (  0%)   0.00 (  0%)     415 kB (  5%)
+ LRA non-specific                   :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)      48 kB (  1%)
+ LRA create live ranges             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       5 kB (  0%)
+ reload CSE regs                    :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      42 kB (  0%)
+ thread pro- & epilogue             :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      24 kB (  0%)
+ hard reg cprop                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ scheduling 2                       :   0.01 (  3%)   0.00 (  0%)   0.02 (  5%)      72 kB (  1%)
+ straight-line strength reduction   :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       5 kB (  0%)
+ initialize rtl                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)      50 kB (  1%)
+ repair loop structures             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ TOTAL                              :   0.29          0.09          0.40           8833 kB
+
+real	0m0.649s
+user	0m0.401s
+sys	0m0.136s
++ cp opt/q13.h gencode.h
++ make q13 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q13" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)    1266 kB ( 22%)
+ phase parsing                      :   0.06 ( 50%)   0.06 ( 75%)   0.13 ( 62%)    3607 kB ( 62%)
+ phase opt and generate             :   0.06 ( 50%)   0.02 ( 25%)   0.07 ( 33%)     936 kB ( 16%)
+ dump files                         :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)       0 kB (  0%)
+ df live regs                       :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)       0 kB (  0%)
+ df live&initialized regs           :   0.00 (  0%)   0.01 ( 12%)   0.00 (  0%)       0 kB (  0%)
+ df use-def / def-use chains        :   0.01 (  8%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ alias stmt walking                 :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)       0 kB (  0%)
+ preprocessing                      :   0.04 ( 33%)   0.01 ( 12%)   0.06 ( 29%)    1395 kB ( 24%)
+ lexical analysis                   :   0.01 (  8%)   0.01 ( 12%)   0.03 ( 14%)       0 kB (  0%)
+ parser (global)                    :   0.01 (  8%)   0.02 ( 25%)   0.03 ( 14%)    1916 kB ( 33%)
+ parser struct body                 :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)      89 kB (  2%)
+ parser enumerator list             :   0.00 (  0%)   0.01 ( 12%)   0.00 (  0%)     122 kB (  2%)
+ tree operand scan                  :   0.01 (  8%)   0.00 (  0%)   0.00 (  0%)      68 kB (  1%)
+ dominator optimization             :   0.00 (  0%)   0.01 ( 13%)   0.00 (  0%)       9 kB (  0%)
+ tree phiprop                       :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)       0 kB (  0%)
+ varconst                           :   0.00 (  0%)   0.01 ( 12%)   0.00 (  0%)       0 kB (  0%)
+ dead store elim1                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  5%)       3 kB (  0%)
+ reload CSE regs                    :   0.01 (  8%)   0.00 (  0%)   0.01 (  5%)      12 kB (  0%)
+ scheduling 2                       :   0.01 (  8%)   0.00 (  0%)   0.01 (  5%)      63 kB (  1%)
+ initialize rtl                     :   0.01 (  8%)   0.00 (  0%)   0.00 (  0%)      12 kB (  0%)
+ rest of compilation                :   0.01 (  8%)   0.00 (  0%)   0.00 (  0%)       9 kB (  0%)
+ TOTAL                              :   0.12          0.08          0.21           5818 kB
+
+real	0m0.455s
+user	0m0.228s
+sys	0m0.116s
++ cp opt/q14.h gencode.h
++ make q14 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q14" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)    1266 kB ( 15%)
+ phase parsing                      :   0.06 ( 22%)   0.05 ( 62%)   0.13 ( 36%)    3689 kB ( 44%)
+ phase opt and generate             :   0.20 ( 74%)   0.03 ( 38%)   0.23 ( 64%)    3419 kB ( 41%)
+ ipa function summary               :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      57 kB (  1%)
+ trivially dead code                :   0.00 (  0%)   0.01 ( 12%)   0.00 (  0%)       0 kB (  0%)
+ df live&initialized regs           :   0.00 (  0%)   0.00 (  0%)   0.02 (  6%)       0 kB (  0%)
+ alias analysis                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)     134 kB (  2%)
+ register scan                      :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ preprocessing                      :   0.03 ( 11%)   0.01 ( 12%)   0.07 ( 19%)    1416 kB ( 17%)
+ lexical analysis                   :   0.02 (  7%)   0.03 ( 38%)   0.02 (  6%)       0 kB (  0%)
+ parser (global)                    :   0.01 (  4%)   0.01 ( 13%)   0.01 (  3%)    1928 kB ( 23%)
+ parser struct body                 :   0.00 (  0%)   0.00 (  0%)   0.02 (  6%)      89 kB (  1%)
+ parser enumerator list             :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)     122 kB (  1%)
+ inline parameters                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      71 kB (  1%)
+ integration                        :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      88 kB (  1%)
+ tree CFG construction              :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      30 kB (  0%)
+ tree VRP                           :   0.04 ( 15%)   0.00 (  0%)   0.00 (  0%)     136 kB (  2%)
+ tree SSA other                     :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)       2 kB (  0%)
+ tree operand scan                  :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)     207 kB (  2%)
+ dominator optimization             :   0.00 (  0%)   0.00 (  0%)   0.02 (  6%)      68 kB (  1%)
+ tree CCP                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       4 kB (  0%)
+ tree reassociation                 :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ tree PRE                           :   0.01 (  4%)   0.00 (  0%)   0.01 (  3%)      48 kB (  1%)
+ complete unrolling                 :   0.00 (  0%)   0.00 (  0%)   0.02 (  6%)     124 kB (  1%)
+ tree vectorization                 :   0.00 (  0%)   0.01 ( 12%)   0.00 (  0%)     110 kB (  1%)
+ tree iv optimization               :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      62 kB (  1%)
+ predictive commoning               :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      16 kB (  0%)
+ expand                             :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)     245 kB (  3%)
+ forward prop                       :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      34 kB (  0%)
+ CSE                                :   0.01 (  4%)   0.00 (  0%)   0.01 (  3%)       5 kB (  0%)
+ dead store elim2                   :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      31 kB (  0%)
+ CSE 2                              :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       2 kB (  0%)
+ combiner                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      86 kB (  1%)
+ integrated RA                      :   0.01 (  4%)   0.00 (  0%)   0.03 (  8%)     388 kB (  5%)
+ LRA create live ranges             :   0.01 (  4%)   0.00 (  0%)   0.01 (  3%)       3 kB (  0%)
+ reload CSE regs                    :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      43 kB (  1%)
+ scheduling 2                       :   0.02 (  7%)   0.00 (  0%)   0.01 (  3%)      69 kB (  1%)
+ initialize rtl                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      12 kB (  0%)
+ rest of compilation                :   0.01 (  4%)   0.01 ( 13%)   0.00 (  0%)      46 kB (  1%)
+ TOTAL                              :   0.27          0.08          0.36           8383 kB
+
+real	0m0.610s
+user	0m0.376s
+sys	0m0.123s
++ cp opt/q15.h gencode.h
++ make q15 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q15" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)    1266 kB ( 14%)
+ phase parsing                      :   0.07 ( 23%)   0.05 ( 56%)   0.14 ( 35%)    3734 kB ( 41%)
+ phase opt and generate             :   0.23 ( 77%)   0.04 ( 44%)   0.26 ( 65%)    4009 kB ( 44%)
+ dump files                         :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df multiple defs                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ df live&initialized regs           :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      45 kB (  1%)
+ alias analysis                     :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     163 kB (  2%)
+ alias stmt walking                 :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ preprocessing                      :   0.04 ( 13%)   0.03 ( 33%)   0.06 ( 15%)    1434 kB ( 16%)
+ lexical analysis                   :   0.02 (  7%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ parser (global)                    :   0.01 (  3%)   0.01 ( 11%)   0.06 ( 15%)    1931 kB ( 21%)
+ parser enumerator list             :   0.00 (  0%)   0.01 ( 11%)   0.00 (  0%)     122 kB (  1%)
+ parser function body               :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)     127 kB (  1%)
+ tree gimplify                      :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     171 kB (  2%)
+ tree VRP                           :   0.03 ( 10%)   0.00 (  0%)   0.01 (  2%)     148 kB (  2%)
+ tree PTA                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      30 kB (  0%)
+ tree SSA other                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       2 kB (  0%)
+ tree operand scan                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     245 kB (  3%)
+ dominator optimization             :   0.01 (  3%)   0.00 (  0%)   0.04 ( 10%)      79 kB (  1%)
+ backwards jump threading           :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ tree PRE                           :   0.00 (  0%)   0.01 ( 11%)   0.00 (  0%)      76 kB (  1%)
+ tree FRE                           :   0.02 (  7%)   0.00 (  0%)   0.01 (  3%)      41 kB (  0%)
+ tree forward propagate             :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      13 kB (  0%)
+ tree vectorization                 :   0.00 (  0%)   0.02 ( 22%)   0.00 (  0%)      79 kB (  1%)
+ predictive commoning               :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      19 kB (  0%)
+ forward prop                       :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      37 kB (  0%)
+ dead store elim1                   :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      30 kB (  0%)
+ dead store elim2                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      41 kB (  0%)
+ CPROP                              :   0.02 (  7%)   0.00 (  0%)   0.01 (  2%)      27 kB (  0%)
+ combiner                           :   0.00 (  0%)   0.01 ( 11%)   0.00 (  0%)     101 kB (  1%)
+ integrated RA                      :   0.02 (  7%)   0.00 (  0%)   0.02 (  5%)     469 kB (  5%)
+ LRA reload inheritance             :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)      15 kB (  0%)
+ LRA create live ranges             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       6 kB (  0%)
+ thread pro- & epilogue             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      23 kB (  0%)
+ scheduling 2                       :   0.02 (  7%)   0.00 (  0%)   0.02 (  5%)      71 kB (  1%)
+ machine dep reorg                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ final                              :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      38 kB (  0%)
+ initialize rtl                     :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      50 kB (  1%)
+ remove unused locals               :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ TOTAL                              :   0.30          0.09          0.40           9018 kB
+
+real	0m0.657s
+user	0m0.390s
+sys	0m0.154s
++ cp opt/q16.h gencode.h
++ make q16 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q16" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)    1266 kB ( 14%)
+ phase parsing                      :   0.06 ( 19%)   0.06 ( 60%)   0.13 ( 31%)    3757 kB ( 41%)
+ phase opt and generate             :   0.25 ( 81%)   0.04 ( 40%)   0.28 ( 67%)    4092 kB ( 45%)
+ callgraph construction             :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)     247 kB (  3%)
+ ipa function summary               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      82 kB (  1%)
+ ipa pure const                     :   0.00 (  0%)   0.01 ( 10%)   0.00 (  0%)       1 kB (  0%)
+ df live regs                       :   0.02 (  6%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df live&initialized regs           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      43 kB (  0%)
+ alias stmt walking                 :   0.00 (  0%)   0.01 ( 10%)   0.00 (  0%)       0 kB (  0%)
+ preprocessing                      :   0.02 (  6%)   0.02 ( 20%)   0.06 ( 14%)    1442 kB ( 16%)
+ lexical analysis                   :   0.04 ( 13%)   0.04 ( 40%)   0.02 (  5%)       0 kB (  0%)
+ parser (global)                    :   0.00 (  0%)   0.00 (  0%)   0.04 ( 10%)    1931 kB ( 21%)
+ parser function body               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     143 kB (  2%)
+ tree CFG cleanup                   :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       1 kB (  0%)
+ tree VRP                           :   0.02 (  6%)   0.00 (  0%)   0.02 (  5%)     157 kB (  2%)
+ tree PTA                           :   0.01 (  3%)   0.00 (  0%)   0.03 (  7%)      30 kB (  0%)
+ tree SSA other                     :   0.00 (  0%)   0.01 ( 10%)   0.00 (  0%)       2 kB (  0%)
+ tree operand scan                  :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)     252 kB (  3%)
+ dominator optimization             :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      88 kB (  1%)
+ tree PRE                           :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      67 kB (  1%)
+ tree FRE                           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      51 kB (  1%)
+ tree loop invariant motion         :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ tree canonical iv                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      38 kB (  0%)
+ tree vectorization                 :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      51 kB (  1%)
+ predictive commoning               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      31 kB (  0%)
+ forward prop                       :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      25 kB (  0%)
+ CSE                                :   0.02 (  6%)   0.00 (  0%)   0.01 (  2%)       6 kB (  0%)
+ dead store elim1                   :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      26 kB (  0%)
+ dead store elim2                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      37 kB (  0%)
+ CPROP                              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      22 kB (  0%)
+ CSE 2                              :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       2 kB (  0%)
+ integrated RA                      :   0.02 (  6%)   0.00 (  0%)   0.04 ( 10%)     375 kB (  4%)
+ LRA non-specific                   :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      50 kB (  1%)
+ LRA reload inheritance             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      18 kB (  0%)
+ LRA create live ranges             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       6 kB (  0%)
+ scheduling 2                       :   0.02 (  6%)   0.01 ( 10%)   0.01 (  2%)      75 kB (  1%)
+ final                              :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      42 kB (  0%)
+ initialize rtl                     :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      47 kB (  1%)
+ TOTAL                              :   0.31          0.10          0.42           9124 kB
+
+real	0m0.668s
+user	0m0.413s
+sys	0m0.142s
++ cp opt/q17.h gencode.h
++ make q17 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q17" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)    1266 kB ( 18%)
+ phase parsing                      :   0.04 ( 25%)   0.08 ( 80%)   0.12 ( 44%)    3660 kB ( 53%)
+ phase opt and generate             :   0.12 ( 75%)   0.02 ( 20%)   0.14 ( 52%)    1996 kB ( 29%)
+ callgraph construction             :   0.01 (  6%)   0.00 (  0%)   0.01 (  4%)     156 kB (  2%)
+ ipa function summary               :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)      36 kB (  1%)
+ df reaching defs                   :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df use-def / def-use chains        :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ register information               :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)       0 kB (  0%)
+ alias analysis                     :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)      69 kB (  1%)
+ alias stmt walking                 :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)       1 kB (  0%)
+ preprocessing                      :   0.04 ( 25%)   0.00 (  0%)   0.07 ( 26%)    1414 kB ( 20%)
+ lexical analysis                   :   0.00 (  0%)   0.04 ( 40%)   0.02 (  7%)       0 kB (  0%)
+ parser (global)                    :   0.00 (  0%)   0.03 ( 30%)   0.01 (  4%)    1923 kB ( 28%)
+ parser struct body                 :   0.00 (  0%)   0.01 ( 10%)   0.01 (  4%)      89 kB (  1%)
+ parser enumerator list             :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)     122 kB (  2%)
+ inline parameters                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)      52 kB (  1%)
+ integration                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)      81 kB (  1%)
+ tree CFG cleanup                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)       0 kB (  0%)
+ tree PTA                           :   0.01 (  6%)   0.00 (  0%)   0.01 (  4%)      13 kB (  0%)
+ dominator optimization             :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)      28 kB (  0%)
+ tree iv optimization               :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)      39 kB (  1%)
+ tree copy headers                  :   0.00 (  0%)   0.01 ( 10%)   0.00 (  0%)       1 kB (  0%)
+ dead store elim1                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)       8 kB (  0%)
+ combiner                           :   0.01 (  6%)   0.00 (  0%)   0.00 (  0%)      25 kB (  0%)
+ integrated RA                      :   0.01 (  6%)   0.00 (  0%)   0.01 (  4%)     157 kB (  2%)
+ LRA non-specific                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)      27 kB (  0%)
+ reload CSE regs                    :   0.00 (  0%)   0.00 (  0%)   0.01 (  4%)      23 kB (  0%)
+ scheduling 2                       :   0.01 (  6%)   0.00 (  0%)   0.01 (  4%)      68 kB (  1%)
+ initialize rtl                     :   0.00 (  0%)   0.01 ( 10%)   0.01 (  4%)      12 kB (  0%)
+ rest of compilation                :   0.01 (  6%)   0.00 (  0%)   0.01 (  4%)      23 kB (  0%)
+ TOTAL                              :   0.16          0.10          0.27           6932 kB
+
+real	0m0.525s
+user	0m0.278s
+sys	0m0.135s
++ cp opt/q18.h gencode.h
++ make q18 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q18" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)    1266 kB ( 13%)
+ phase parsing                      :   0.07 ( 20%)   0.06 ( 67%)   0.14 ( 30%)    3790 kB ( 39%)
+ phase opt and generate             :   0.28 ( 80%)   0.03 ( 33%)   0.31 ( 67%)    4551 kB ( 47%)
+ dump files                         :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ callgraph construction             :   0.01 (  3%)   0.01 ( 11%)   0.00 (  0%)     288 kB (  3%)
+ ipa function summary               :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     100 kB (  1%)
+ trivially dead code                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df live regs                       :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ alias stmt walking                 :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ rebuild jump labels                :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ preprocessing                      :   0.02 (  6%)   0.02 ( 22%)   0.07 ( 15%)    1454 kB ( 15%)
+ lexical analysis                   :   0.04 ( 11%)   0.01 ( 11%)   0.03 (  7%)       0 kB (  0%)
+ parser (global)                    :   0.00 (  0%)   0.03 ( 33%)   0.04 (  9%)    1934 kB ( 20%)
+ parser function body               :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     160 kB (  2%)
+ inline parameters                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     143 kB (  1%)
+ tree gimplify                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     238 kB (  2%)
+ tree CFG cleanup                   :   0.00 (  0%)   0.01 ( 11%)   0.01 (  2%)       0 kB (  0%)
+ tree VRP                           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     147 kB (  2%)
+ tree Early VRP                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      47 kB (  0%)
+ dominator optimization             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      91 kB (  1%)
+ tree PRE                           :   0.01 (  3%)   0.00 (  0%)   0.02 (  4%)      89 kB (  1%)
+ tree FRE                           :   0.03 (  9%)   0.00 (  0%)   0.00 (  0%)      61 kB (  1%)
+ tree forward propagate             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      11 kB (  0%)
+ tree canonical iv                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      50 kB (  1%)
+ tree vectorization                 :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      50 kB (  1%)
+ tree slp vectorization             :   0.02 (  6%)   0.00 (  0%)   0.00 (  0%)     217 kB (  2%)
+ tree loop distribution             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      50 kB (  1%)
+ tree iv optimization               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     130 kB (  1%)
+ expand                             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     314 kB (  3%)
+ CSE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       3 kB (  0%)
+ dead store elim1                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      28 kB (  0%)
+ dead store elim2                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      45 kB (  0%)
+ CPROP                              :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      18 kB (  0%)
+ branch prediction                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      39 kB (  0%)
+ combiner                           :   0.02 (  6%)   0.00 (  0%)   0.00 (  0%)      69 kB (  1%)
+ integrated RA                      :   0.03 (  9%)   0.01 ( 11%)   0.03 (  7%)     425 kB (  4%)
+ LRA non-specific                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      87 kB (  1%)
+ LRA reload inheritance             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      28 kB (  0%)
+ LRA create live ranges             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       9 kB (  0%)
+ reload CSE regs                    :   0.01 (  3%)   0.00 (  0%)   0.02 (  4%)      60 kB (  1%)
+ scheduling 2                       :   0.03 (  9%)   0.00 (  0%)   0.03 (  7%)      80 kB (  1%)
+ reorder blocks                     :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       4 kB (  0%)
+ final                              :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      43 kB (  0%)
+ initialize rtl                     :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      49 kB (  1%)
+ TOTAL                              :   0.35          0.09          0.46           9616 kB
+
+real	0m0.711s
+user	0m0.460s
+sys	0m0.137s
++ cp opt/q19.h gencode.h
++ make q19 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q19" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)    1266 kB ( 14%)
+ phase parsing                      :   0.05 ( 15%)   0.08 ( 80%)   0.14 ( 32%)    3790 kB ( 40%)
+ phase opt and generate             :   0.28 ( 85%)   0.02 ( 20%)   0.30 ( 68%)    4292 kB ( 46%)
+ callgraph construction             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     281 kB (  3%)
+ ipa function summary               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      82 kB (  1%)
+ cfg cleanup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       7 kB (  0%)
+ df live regs                       :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df live&initialized regs           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df use-def / def-use chains        :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      48 kB (  1%)
+ preprocessing                      :   0.00 (  0%)   0.02 ( 20%)   0.02 (  5%)    1467 kB ( 16%)
+ lexical analysis                   :   0.01 (  3%)   0.05 ( 50%)   0.04 (  9%)       0 kB (  0%)
+ parser (global)                    :   0.03 (  9%)   0.01 ( 10%)   0.06 ( 14%)    1932 kB ( 21%)
+ parser struct body                 :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      89 kB (  1%)
+ parser function body               :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)     150 kB (  2%)
+ integration                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     143 kB (  2%)
+ tree gimplify                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     210 kB (  2%)
+ tree CFG cleanup                   :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       1 kB (  0%)
+ tree VRP                           :   0.00 (  0%)   0.00 (  0%)   0.03 (  7%)     163 kB (  2%)
+ tree SSA incremental               :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      16 kB (  0%)
+ dominator optimization             :   0.02 (  6%)   0.00 (  0%)   0.02 (  5%)      95 kB (  1%)
+ tree CCP                           :   0.03 (  9%)   0.00 (  0%)   0.00 (  0%)       7 kB (  0%)
+ tree PRE                           :   0.02 (  6%)   0.01 ( 10%)   0.02 (  5%)      82 kB (  1%)
+ tree FRE                           :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)      49 kB (  1%)
+ tree vectorization                 :   0.00 (  0%)   0.01 ( 10%)   0.00 (  0%)      57 kB (  1%)
+ CSE                                :   0.03 (  9%)   0.00 (  0%)   0.01 (  2%)       5 kB (  0%)
+ dead store elim1                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      24 kB (  0%)
+ loop init                          :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     141 kB (  2%)
+ branch prediction                  :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      44 kB (  0%)
+ combiner                           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      79 kB (  1%)
+ integrated RA                      :   0.03 (  9%)   0.00 (  0%)   0.03 (  7%)     399 kB (  4%)
+ LRA non-specific                   :   0.01 (  3%)   0.00 (  0%)   0.02 (  5%)      47 kB (  1%)
+ reload CSE regs                    :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      49 kB (  1%)
+ thread pro- & epilogue             :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      30 kB (  0%)
+ hard reg cprop                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ scheduling 2                       :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      82 kB (  1%)
+ shorten branches                   :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ initialize rtl                     :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.00 (  0%)   0.00 (  0%)   0.02 (  5%)      51 kB (  1%)
+ TOTAL                              :   0.33          0.10          0.44           9362 kB
+
+real	0m0.691s
+user	0m0.447s
+sys	0m0.133s
++ cp opt/q20.h gencode.h
++ make q20 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q20" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)    1266 kB ( 12%)
+ phase parsing                      :   0.06 ( 16%)   0.07 ( 88%)   0.13 ( 27%)    3777 kB ( 37%)
+ phase opt and generate             :   0.32 ( 84%)   0.01 ( 12%)   0.34 ( 71%)    5086 kB ( 50%)
+ dump files                         :   0.01 (  3%)   0.00 (  0%)   0.02 (  4%)       0 kB (  0%)
+ ipa function summary               :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      90 kB (  1%)
+ df scan insns                      :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df live regs                       :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df live&initialized regs           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.02 (  5%)   0.00 (  0%)   0.01 (  2%)      61 kB (  1%)
+ register information               :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ alias analysis                     :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     196 kB (  2%)
+ alias stmt walking                 :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ preprocessing                      :   0.02 (  5%)   0.02 ( 25%)   0.06 ( 12%)    1437 kB ( 14%)
+ lexical analysis                   :   0.01 (  3%)   0.03 ( 38%)   0.03 (  6%)       0 kB (  0%)
+ parser (global)                    :   0.03 (  8%)   0.02 ( 25%)   0.03 (  6%)    1934 kB ( 19%)
+ parser function body               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     164 kB (  2%)
+ integration                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     169 kB (  2%)
+ tree gimplify                      :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)     230 kB (  2%)
+ tree VRP                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     201 kB (  2%)
+ tree PTA                           :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      32 kB (  0%)
+ tree SSA incremental               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      46 kB (  0%)
+ dominator optimization             :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)     106 kB (  1%)
+ tree CCP                           :   0.02 (  5%)   0.00 (  0%)   0.01 (  2%)       7 kB (  0%)
+ tree FRE                           :   0.02 (  5%)   0.00 (  0%)   0.01 (  2%)      50 kB (  0%)
+ tree code sinking                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       7 kB (  0%)
+ tree forward propagate             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      16 kB (  0%)
+ tree aggressive DCE                :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      42 kB (  0%)
+ complete unrolling                 :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     170 kB (  2%)
+ tree slp vectorization             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     176 kB (  2%)
+ tree iv optimization               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      96 kB (  1%)
+ dominance computation              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ CSE                                :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)       8 kB (  0%)
+ loop init                          :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     150 kB (  1%)
+ CPROP                              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      35 kB (  0%)
+ CSE 2                              :   0.01 (  3%)   0.00 (  0%)   0.02 (  4%)       3 kB (  0%)
+ combiner                           :   0.01 (  3%)   0.00 (  0%)   0.02 (  4%)     123 kB (  1%)
+ integrated RA                      :   0.03 (  8%)   0.01 ( 12%)   0.03 (  6%)     584 kB (  6%)
+ LRA non-specific                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      61 kB (  1%)
+ LRA reload inheritance             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      34 kB (  0%)
+ LRA create live ranges             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       7 kB (  0%)
+ reload CSE regs                    :   0.01 (  3%)   0.00 (  0%)   0.02 (  4%)      68 kB (  1%)
+ scheduling 2                       :   0.03 (  8%)   0.00 (  0%)   0.01 (  2%)      82 kB (  1%)
+ machine dep reorg                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ initialize rtl                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      12 kB (  0%)
+ rest of compilation                :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)      61 kB (  1%)
+ TOTAL                              :   0.38          0.08          0.48          10139 kB
+
+real	0m0.731s
+user	0m0.481s
+sys	0m0.138s
++ cp opt/q21.h gencode.h
++ make q21 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q21" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)    1266 kB ( 13%)
+ phase parsing                      :   0.08 ( 21%)   0.05 ( 83%)   0.14 ( 30%)    3781 kB ( 40%)
+ phase opt and generate             :   0.30 ( 77%)   0.01 ( 17%)   0.32 ( 68%)    4463 kB ( 47%)
+ df live regs                       :   0.03 (  8%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ df live&initialized regs           :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df use-def / def-use chains        :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)      59 kB (  1%)
+ register information               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ alias analysis                     :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     171 kB (  2%)
+ alias stmt walking                 :   0.01 (  3%)   0.00 (  0%)   0.02 (  4%)       0 kB (  0%)
+ register scan                      :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ preprocessing                      :   0.05 ( 13%)   0.03 ( 50%)   0.04 (  9%)    1438 kB ( 15%)
+ lexical analysis                   :   0.01 (  3%)   0.01 ( 17%)   0.03 (  6%)       0 kB (  0%)
+ parser (global)                    :   0.01 (  3%)   0.00 (  0%)   0.02 (  4%)    1932 kB ( 20%)
+ parser struct body                 :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)      89 kB (  1%)
+ parser enumerator list             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     122 kB (  1%)
+ parser function body               :   0.01 (  3%)   0.01 ( 17%)   0.01 (  2%)     170 kB (  2%)
+ parser inl. func. body             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      28 kB (  0%)
+ integration                        :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)     199 kB (  2%)
+ tree Early VRP                     :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      47 kB (  0%)
+ tree PTA                           :   0.01 (  3%)   0.01 ( 17%)   0.00 (  0%)      32 kB (  0%)
+ tree SSA other                     :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       2 kB (  0%)
+ dominator optimization             :   0.00 (  0%)   0.00 (  0%)   0.05 ( 11%)      90 kB (  1%)
+ tree PRE                           :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      78 kB (  1%)
+ tree FRE                           :   0.01 (  3%)   0.00 (  0%)   0.01 (  2%)      49 kB (  1%)
+ tree forward propagate             :   0.02 (  5%)   0.00 (  0%)   0.00 (  0%)      12 kB (  0%)
+ dominance computation              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ out of ssa                         :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ expand vars                        :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      50 kB (  1%)
+ expand                             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)     352 kB (  4%)
+ CSE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       6 kB (  0%)
+ dead code elimination              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ CPROP                              :   0.00 (  0%)   0.00 (  0%)   0.02 (  4%)      24 kB (  0%)
+ PRE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       1 kB (  0%)
+ CSE 2                              :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       3 kB (  0%)
+ combiner                           :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      86 kB (  1%)
+ if-conversion                      :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       3 kB (  0%)
+ integrated RA                      :   0.02 (  5%)   0.00 (  0%)   0.01 (  2%)     453 kB (  5%)
+ LRA non-specific                   :   0.01 (  3%)   0.00 (  0%)   0.02 (  4%)      84 kB (  1%)
+ LRA reload inheritance             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      22 kB (  0%)
+ LRA create live ranges             :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)       8 kB (  0%)
+ reload CSE regs                    :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      60 kB (  1%)
+ thread pro- & epilogue             :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)      24 kB (  0%)
+ scheduling 2                       :   0.04 ( 10%)   0.00 (  0%)   0.03 (  6%)      81 kB (  1%)
+ initialize rtl                     :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      12 kB (  0%)
+ rest of compilation                :   0.01 (  3%)   0.00 (  0%)   0.00 (  0%)      50 kB (  1%)
+ remove unused locals               :   0.00 (  0%)   0.00 (  0%)   0.01 (  2%)       0 kB (  0%)
+ TOTAL                              :   0.39          0.06          0.47           9520 kB
+
+real	0m0.721s
+user	0m0.501s
+sys	0m0.107s
++ cp opt/q22.h gencode.h
++ make q22 sys=sableintel debug=-DNO_PROFILE_INFO myavx= report=-ftime-report
+gcc-8 -o "compile-q22" \
+    main.o callgen.c \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/sableintel/lib -lcore -lpcre2-8    \
+    -O3 -std=c99 -fopenmp -lm -lstdc++ -march=native    \
+    -DNO_PROFILE_INFO -ftime-report
+
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)    1266 kB ( 16%)
+ phase parsing                      :   0.05 ( 22%)   0.07 ( 70%)   0.13 ( 37%)    3697 kB ( 47%)
+ phase opt and generate             :   0.18 ( 78%)   0.03 ( 30%)   0.21 ( 60%)    2909 kB ( 37%)
+ dump files                         :   0.01 (  4%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ df scan insns                      :   0.01 (  4%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ df live regs                       :   0.01 (  4%)   0.00 (  0%)   0.01 (  3%)       0 kB (  0%)
+ df use-def / def-use chains        :   0.00 (  0%)   0.01 ( 10%)   0.00 (  0%)       0 kB (  0%)
+ df reg dead/unused notes           :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      32 kB (  0%)
+ alias stmt walking                 :   0.01 (  4%)   0.00 (  0%)   0.01 (  3%)       2 kB (  0%)
+ preprocessing                      :   0.03 ( 13%)   0.02 ( 20%)   0.05 ( 14%)    1421 kB ( 18%)
+ lexical analysis                   :   0.00 (  0%)   0.02 ( 20%)   0.05 ( 14%)       0 kB (  0%)
+ parser (global)                    :   0.02 (  9%)   0.02 ( 20%)   0.02 (  6%)    1925 kB ( 24%)
+ parser struct body                 :   0.00 (  0%)   0.01 ( 10%)   0.00 (  0%)      89 kB (  1%)
+ parser function body               :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)     109 kB (  1%)
+ tree gimplify                      :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)     133 kB (  2%)
+ tree PTA                           :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      19 kB (  0%)
+ tree operand scan                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)     172 kB (  2%)
+ dominator optimization             :   0.00 (  0%)   0.00 (  0%)   0.02 (  6%)      62 kB (  1%)
+ tree PRE                           :   0.00 (  0%)   0.02 ( 20%)   0.00 (  0%)      68 kB (  1%)
+ tree conservative DCE              :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       4 kB (  0%)
+ tree aggressive DCE                :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      24 kB (  0%)
+ tree loop distribution             :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      25 kB (  0%)
+ tree iv optimization               :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      45 kB (  1%)
+ tree copy headers                  :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       7 kB (  0%)
+ dominance computation              :   0.00 (  0%)   0.00 (  0%)   0.02 (  6%)       0 kB (  0%)
+ forward prop                       :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      17 kB (  0%)
+ CSE                                :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)       4 kB (  0%)
+ dead store elim2                   :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      26 kB (  0%)
+ PRE                                :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)       1 kB (  0%)
+ combiner                           :   0.01 (  4%)   0.00 (  0%)   0.02 (  6%)      46 kB (  1%)
+ integrated RA                      :   0.02 (  9%)   0.00 (  0%)   0.02 (  6%)     267 kB (  3%)
+ reload CSE regs                    :   0.00 (  0%)   0.00 (  0%)   0.01 (  3%)      34 kB (  0%)
+ thread pro- & epilogue             :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      20 kB (  0%)
+ scheduling 2                       :   0.01 (  4%)   0.00 (  0%)   0.01 (  3%)      68 kB (  1%)
+ initialize rtl                     :   0.01 (  4%)   0.00 (  0%)   0.01 (  3%)      12 kB (  0%)
+ rest of compilation                :   0.01 (  4%)   0.00 (  0%)   0.00 (  0%)      34 kB (  0%)
+ TOTAL                              :   0.23          0.10          0.35           7882 kB
+
+real	0m0.595s
+user	0m0.335s
+sys	0m0.146s

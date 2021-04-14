@@ -1,0 +1,15 @@
+Setup 1 thread(s)
+starting database 'tpch1'... done
+stopping database 'tpch1'... done
+Setup 2 thread(s)
+starting database 'tpch1'... done
+stopping database 'tpch1'... done
+Setup 4 thread(s)
+starting database 'tpch1'... done
+stopping database 'tpch1'... done
+Setup 8 thread(s)
+starting database 'tpch1'... done
+stopping database 'tpch1'... done
+Setup 16 thread(s)
+starting database 'tpch1'... done
+stopping database 'tpch1'... done
