@@ -1,0 +1,18 @@
++ cp opt/morgan.h gencode.h
++ make morgan sys=tigger
+CUDA_HOME=/usr/local/cuda \
+pgcc   -o "compile-morgan" \
+    main.c    \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/tigger/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/tigger/lib -lcore -lpcre2-8    \
+    -c99 -lm -lstdc++ -acc -ta=nvidia -mp -O4  \
+    -Minfo=accel
+horse_morgan:
+     14, include "gencode.h"
+         188, Generating copyin(sx2_ptr[:r0],sy2_ptr[:r0],sx_ptr[:r0],n0,sxy_ptr[:r0]) [if not already present]
+              Generating copyout(z_ptr[:r0]) [if not already present]
+              Generating copyin(sy_ptr[:r0]) [if not already present]
+         191, Generating Tesla code
+             192, #pragma acc loop gang, vector(128) /* blockIdx.x threadIdx.x */
+initGPU:
+     19, Generating copy(dummy[:]) [if not already present]

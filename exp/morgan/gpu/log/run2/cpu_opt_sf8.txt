@@ -1,0 +1,3120 @@
+tigger> morgan, T1, Run10, SF8
++ ./compile-morgan 8 10 0
+# of cores: 1
+Loading table morgan
+File: /home/sable/hanfeng.c/github/HorsePower/data/morgan/db8/morgan.txt
+>> CSV info: 8388608 rows and 2 cols
+loading data
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 23.199 ms
+[Profiling] Line 1: 22.969 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 53.524 ms
+[Profiling] Line 1: 22.746 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 53.57 ms
+[Profiling] Line 1: 22.907 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 21.071 ms
+[Profiling] Line 1: 22.732 ms
+[Profiling] Line 49: 674.97 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 675.873 ms
+The elapsed time (ms): 675.874
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.559 ms
+[Profiling] Line 1: 8.688 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.736 ms
+[Profiling] Line 1: 8.829 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.698 ms
+[Profiling] Line 1: 8.661 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.847 ms
+[Profiling] Line 1: 8.666 ms
+[Profiling] Line 49: 353.658 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 353.663 ms
+The elapsed time (ms): 353.664
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.601 ms
+[Profiling] Line 1: 8.744 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.905 ms
+[Profiling] Line 1: 8.889 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.809 ms
+[Profiling] Line 1: 8.654 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.891 ms
+[Profiling] Line 1: 8.663 ms
+[Profiling] Line 49: 355.023 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 355.029 ms
+The elapsed time (ms): 355.03
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.51 ms
+[Profiling] Line 1: 8.676 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.776 ms
+[Profiling] Line 1: 8.712 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.676 ms
+[Profiling] Line 1: 8.682 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.895 ms
+[Profiling] Line 1: 8.66 ms
+[Profiling] Line 49: 353.217 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 353.222 ms
+The elapsed time (ms): 353.223
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.62 ms
+[Profiling] Line 1: 8.678 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.966 ms
+[Profiling] Line 1: 8.706 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.839 ms
+[Profiling] Line 1: 8.652 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.858 ms
+[Profiling] Line 1: 8.779 ms
+[Profiling] Line 49: 354.347 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 354.352 ms
+The elapsed time (ms): 354.352
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.534 ms
+[Profiling] Line 1: 8.656 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.669 ms
+[Profiling] Line 1: 8.641 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 39.053 ms
+[Profiling] Line 1: 8.679 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.86 ms
+[Profiling] Line 1: 8.671 ms
+[Profiling] Line 49: 354.141 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 354.146 ms
+The elapsed time (ms): 354.147
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.58 ms
+[Profiling] Line 1: 8.697 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 39.192 ms
+[Profiling] Line 1: 8.637 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.76 ms
+[Profiling] Line 1: 8.658 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.891 ms
+[Profiling] Line 1: 8.663 ms
+[Profiling] Line 49: 353.668 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 353.673 ms
+The elapsed time (ms): 353.674
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.552 ms
+[Profiling] Line 1: 8.686 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.603 ms
+[Profiling] Line 1: 8.647 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 39.476 ms
+[Profiling] Line 1: 8.779 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 9.055 ms
+[Profiling] Line 1: 8.656 ms
+[Profiling] Line 49: 355.666 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 355.671 ms
+The elapsed time (ms): 355.672
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.586 ms
+[Profiling] Line 1: 8.618 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.893 ms
+[Profiling] Line 1: 8.735 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.722 ms
+[Profiling] Line 1: 8.715 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.974 ms
+[Profiling] Line 1: 8.625 ms
+[Profiling] Line 49: 357.704 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 357.711 ms
+The elapsed time (ms): 357.711
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.554 ms
+[Profiling] Line 1: 8.584 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.674 ms
+[Profiling] Line 1: 8.708 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.68 ms
+[Profiling] Line 1: 8.655 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.926 ms
+[Profiling] Line 1: 8.753 ms
+[Profiling] Line 49: 354.675 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 354.68 ms
+The elapsed time (ms): 354.681
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.484 ms
+[Profiling] Line 1: 8.657 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.713 ms
+[Profiling] Line 1: 8.635 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.661 ms
+[Profiling] Line 1: 9.252 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.895 ms
+[Profiling] Line 1: 8.718 ms
+[Profiling] Line 49: 353.739 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 353.745 ms
+The elapsed time (ms): 353.745
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.474 ms
+[Profiling] Line 1: 8.719 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.581 ms
+[Profiling] Line 1: 8.652 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.794 ms
+[Profiling] Line 1: 8.652 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+839 ms
+[Profiling] Line 1: 8.695 ms
+[Profiling] Line 49: 352.889 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 352.895 ms
+The elapsed time (ms): 352.896
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.525 ms
+[Profiling] Line 1: 8.669 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.606 ms
+[Profiling] Line 1: 8.671 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.662 ms
+[Profiling] Line 1: 8.737 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.917 ms
+[Profiling] Line 1: 8.747 ms
+[Profiling] Line 49: 352.956 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 352.96 ms
+The elapsed time (ms): 352.961
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.494 ms
+[Profiling] Line 1: 8.633 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.714 ms
+[Profiling] Line 1: 8.643 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.777 ms
+[Profiling] Line 1: 8.652 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 9.138 ms
+[Profiling] Line 1: 8.778 ms
+[Profiling] Line 49: 353.642 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 353.646 ms
+The elapsed time (ms): 353.647
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.537 ms
+[Profiling] Line 1: 8.655 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 38.783 ms
+[Profiling] Line 1: 8.76 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 38.639 ms
+[Profiling] Line 1: 8.658 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.93 ms
+[Profiling] Line 1: 8.659 ms
+[Profiling] Line 49: 352.966 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 352.971 ms
+The elapsed time (ms): 352.972
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+Black-Scholes>> Run with 15 times, last 10 average (ms): 354.211 | 675.874 353.664 355.03 353.223 354.352 354.147 353.674 355.672 357.711 354.681 353.745 352.896 352.961 353.647 352.972
+Black-Scholes>> Last 10 key statements time (ms): 78.2027 | 92.978 78.142 78.59 78.028 78.598 78.744 77.915 79.305 77.956 77.947 78.2 77.971 77.894 78.11 77.985
+tigger> morgan, T2, Run10, SF8
++ ./compile-morgan 8 10 0
+# of cores: 2
+Loading table morgan
+File: /home/sable/hanfeng.c/github/HorsePower/data/morgan/db8/morgan.txt
+>> CSV info: 8388608 rows and 2 cols
+loading data
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 14.312 ms
+[Profiling] Line 1: 14.324 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 27.789 ms
+[Profiling] Line 1: 14.147 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 27.839 ms
+[Profiling] Line 1: 14.237 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 11.707 ms
+[Profiling] Line 1: 14.272 ms
+[Profiling] Line 49: 369.315 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 370.731 ms
+The elapsed time (ms): 370.731
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.655 ms
+[Profiling] Line 1: 8.8 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 19.882 ms
+[Profiling] Line 1: 8.659 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 20.051 ms
+[Profiling] Line 1: 8.647 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.495 ms
+[Profiling] Line 1: 8.632 ms
+[Profiling] Line 49: 244.952 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 244.958 ms
+The elapsed time (ms): 244.958
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.643 ms
+[Profiling] Line 1: 8.665 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 19.904 ms
+[Profiling] Line 1: 8.664 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 19.864 ms
+[Profiling] Line 1: 8.753 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.63 ms
+[Profiling] Line 1: 8.636 ms
+[Profiling] Line 49: 244.686 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 244.706 ms
+The elapsed time (ms): 244.707
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.594 ms
+[Profiling] Line 1: 8.892 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 19.931 ms
+[Profiling] Line 1: 8.654 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 19.894 ms
+[Profiling] Line 1: 8.647 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.481 ms
+[Profiling] Line 1: 8.647 ms
+[Profiling] Line 49: 244.258 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 244.263 ms
+The elapsed time (ms): 244.263
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.601 ms
+[Profiling] Line 1: 8.695 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 19.935 ms
+[Profiling] Line 1: 8.688 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 19.871 ms
+[Profiling] Line 1: 8.646 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.541 ms
+[Profiling] Line 1: 8.638 ms
+[Profiling] Line 49: 244.84 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 244.846 ms
+The elapsed time (ms): 244.846
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.596 ms
+[Profiling] Line 1: 8.737 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 19.965 ms
+[Profiling] Line 1: 8.701 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 19.87 ms
+[Profiling] Line 1: 8.763 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.479 ms
+[Profiling] Line 1: 8.787 ms
+[Profiling] Line 49: 244.454 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 244.459 ms
+The elapsed time (ms): 244.459
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.722 ms
+[Profiling] Line 1: 8.696 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 20.567 ms
+[Profiling] Line 1: 8.703 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 19.951 ms
+[Profiling] Line 1: 8.662 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.523 ms
+[Profiling] Line 1: 8.68 ms
+[Profiling] Line 49: 245.254 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 245.26 ms
+The elapsed time (ms): 245.261
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.636 ms
+[Profiling] Line 1: 8.728 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 19.854 ms
+[Profiling] Line 1: 8.658 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 19.917 ms
+[Profiling] Line 1: 8.648 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.699 ms
+[Profiling] Line 1: 8.701 ms
+[Profiling] Line 49: 244.246 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 244.252 ms
+The elapsed time (ms): 244.253
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.673 ms
+[Profiling] Line 1: 8.703 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 19.88 ms
+[Profiling] Line 1: 8.666 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 19.916 ms
+[Profiling] Line 1: 8.706 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.478 ms
+[Profiling] Line 1: 8.638 ms
+[Profiling] Line 49: 244.235 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 244.239 ms
+The elapsed time (ms): 244.24
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.626 ms
+[Profiling] Line 1: 8.714 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 19.905 ms
+[Profiling] Line 1: 8.716 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 20.293 ms
+[Profiling] Line 1: 8.652 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.504 ms
+[Profiling] Line 1: 8.627 ms
+[Profiling] Line 49: 245.246 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 245.25 ms
+The elapsed time (ms): 245.251
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.599 ms
+[Profiling] Line 1: 8.69 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 19.991 ms
+[Profiling] Line 1: 9.077 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 19.985 ms
+[Profiling] Line 1: 8.842 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.515 ms
+[Profiling] Line 1: 8.584 ms
+[Profiling] Line 49: 245.931 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 245.936 ms
+The elapsed time (ms): 245.936
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.548 ms
+[Profiling] Line 1: 8.676 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 20.154 ms
+[Profiling] Line 1: 8.779 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 19.898 ms
+[Profiling] Line 1: 8.639 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+535 ms
+[Profiling] Line 1: 8.625 ms
+[Profiling] Line 49: 244.49 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 244.496 ms
+The elapsed time (ms): 244.497
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.655 ms
+[Profiling] Line 1: 8.719 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 19.934 ms
+[Profiling] Line 1: 8.966 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 19.96 ms
+[Profiling] Line 1: 8.711 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.501 ms
+[Profiling] Line 1: 8.685 ms
+[Profiling] Line 49: 246.665 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 246.673 ms
+The elapsed time (ms): 246.673
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.634 ms
+[Profiling] Line 1: 8.732 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 19.928 ms
+[Profiling] Line 1: 8.711 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 19.945 ms
+[Profiling] Line 1: 8.715 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.573 ms
+[Profiling] Line 1: 8.727 ms
+[Profiling] Line 49: 246.489 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 246.494 ms
+The elapsed time (ms): 246.494
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 8.622 ms
+[Profiling] Line 1: 8.76 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 20.081 ms
+[Profiling] Line 1: 8.707 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 20.133 ms
+[Profiling] Line 1: 8.711 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 9.104 ms
+[Profiling] Line 1: 8.686 ms
+[Profiling] Line 49: 247.534 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 247.54 ms
+The elapsed time (ms): 247.54
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+Black-Scholes>> Run with 15 times, last 10 average (ms): 245.46 | 370.731 244.958 244.707 244.263 244.846 244.459 245.261 244.253 244.24 245.251 245.936 244.497 246.673 246.494 247.54
+Black-Scholes>> Last 10 key statements time (ms): 40.2796 | 48.079 40.151 40.142 40.157 40.83 40.133 40.33 40.191 40.22 40.324 40.647 40.133 40.296 40.264 40.258
+tigger> morgan, T4, Run10, SF8
++ ./compile-morgan 8 10 0
+# of cores: 4
+Loading table morgan
+File: /home/sable/hanfeng.c/github/HorsePower/data/morgan/db8/morgan.txt
+>> CSV info: 8388608 rows and 2 cols
+loading data
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.898 ms
+[Profiling] Line 1: 9.807 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 14.693 ms
+[Profiling] Line 1: 9.804 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 14.507 ms
+[Profiling] Line 1: 9.799 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 7.524 ms
+[Profiling] Line 1: 9.705 ms
+[Profiling] Line 49: 218.529 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 220.002 ms
+The elapsed time (ms): 220.003
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.735 ms
+[Profiling] Line 1: 9.749 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.349 ms
+[Profiling] Line 1: 9.808 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.397 ms
+[Profiling] Line 1: 9.783 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.525 ms
+[Profiling] Line 1: 9.749 ms
+[Profiling] Line 49: 210.589 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.596 ms
+The elapsed time (ms): 210.596
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.748 ms
+[Profiling] Line 1: 9.788 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.338 ms
+[Profiling] Line 1: 9.798 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.349 ms
+[Profiling] Line 1: 9.773 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.512 ms
+[Profiling] Line 1: 9.742 ms
+[Profiling] Line 49: 210.744 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.749 ms
+The elapsed time (ms): 210.749
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.741 ms
+[Profiling] Line 1: 9.704 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.344 ms
+[Profiling] Line 1: 9.798 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.349 ms
+[Profiling] Line 1: 9.794 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.527 ms
+[Profiling] Line 1: 9.745 ms
+[Profiling] Line 49: 210.743 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.749 ms
+The elapsed time (ms): 210.75
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.737 ms
+[Profiling] Line 1: 9.792 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.351 ms
+[Profiling] Line 1: 9.836 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.346 ms
+[Profiling] Line 1: 9.789 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.522 ms
+[Profiling] Line 1: 9.735 ms
+[Profiling] Line 49: 211.353 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 211.359 ms
+The elapsed time (ms): 211.359
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.823 ms
+[Profiling] Line 1: 9.816 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.973 ms
+[Profiling] Line 1: 10.007 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.347 ms
+[Profiling] Line 1: 9.804 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.538 ms
+[Profiling] Line 1: 9.752 ms
+[Profiling] Line 49: 212.109 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.114 ms
+The elapsed time (ms): 212.115
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.724 ms
+[Profiling] Line 1: 9.776 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 12.487 ms
+[Profiling] Line 1: 9.796 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.352 ms
+[Profiling] Line 1: 9.775 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.518 ms
+[Profiling] Line 1: 9.751 ms
+[Profiling] Line 49: 212.922 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.927 ms
+The elapsed time (ms): 212.927
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.749 ms
+[Profiling] Line 1: 9.789 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.342 ms
+[Profiling] Line 1: 9.804 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 12.592 ms
+[Profiling] Line 1: 9.762 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.521 ms
+[Profiling] Line 1: 9.75 ms
+[Profiling] Line 49: 212.953 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.959 ms
+The elapsed time (ms): 212.96
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.734 ms
+[Profiling] Line 1: 9.755 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.383 ms
+[Profiling] Line 1: 9.812 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.346 ms
+[Profiling] Line 1: 9.834 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.52 ms
+[Profiling] Line 1: 9.746 ms
+[Profiling] Line 49: 211.323 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 211.327 ms
+The elapsed time (ms): 211.328
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.744 ms
+[Profiling] Line 1: 9.785 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.334 ms
+[Profiling] Line 1: 9.732 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 11.697 ms
+[Profiling] Line 1: 9.686 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.527 ms
+[Profiling] Line 1: 9.714 ms
+[Profiling] Line 49: 211.14 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 211.146 ms
+The elapsed time (ms): 211.147
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.649 ms
+[Profiling] Line 1: 10.166 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.347 ms
+[Profiling] Line 1: 9.704 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.564 ms
+[Profiling] Line 1: 9.69 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.464 ms
+[Profiling] Line 1: 9.648 ms
+[Profiling] Line 49: 209.677 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 209.683 ms
+The elapsed time (ms): 209.684
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.639 ms
+[Profiling] Line 1: 9.87 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 12.492 ms
+[Profiling] Line 1: 9.701 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.322 ms
+[Profiling] Line 1: 9.689 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+459 ms
+[Profiling] Line 1: 9.664 ms
+[Profiling] Line 49: 210.971 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.977 ms
+The elapsed time (ms): 210.977
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.663 ms
+[Profiling] Line 1: 9.696 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.34 ms
+[Profiling] Line 1: 9.702 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.436 ms
+[Profiling] Line 1: 9.704 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.482 ms
+[Profiling] Line 1: 9.8 ms
+[Profiling] Line 49: 209.025 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 209.03 ms
+The elapsed time (ms): 209.031
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.631 ms
+[Profiling] Line 1: 9.705 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.343 ms
+[Profiling] Line 1: 9.706 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.494 ms
+[Profiling] Line 1: 9.699 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.568 ms
+[Profiling] Line 1: 9.738 ms
+[Profiling] Line 49: 208.996 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 209.002 ms
+The elapsed time (ms): 209.002
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.632 ms
+[Profiling] Line 1: 9.691 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.376 ms
+[Profiling] Line 1: 9.709 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.488 ms
+[Profiling] Line 1: 9.737 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.455 ms
+[Profiling] Line 1: 9.642 ms
+[Profiling] Line 49: 209.74 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 209.745 ms
+The elapsed time (ms): 209.746
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+Black-Scholes>> Run with 15 times, last 10 average (ms): 210.892 | 220.003 210.596 210.749 210.75 211.359 212.115 212.927 212.96 211.328 211.147 209.684 210.977 209.031 209.002 209.746
+Black-Scholes>> Last 10 key statements time (ms): 21.2122 | 25.208 21.182 21.177 21.221 21.614 21.18 21.214 21.18 21.209 21.183 21.167 21.199 21.196 21.185 21.409
+tigger> morgan, T8, Run10, SF8
++ ./compile-morgan 8 10 0
+# of cores: 8
+Loading table morgan
+File: /home/sable/hanfeng.c/github/HorsePower/data/morgan/db8/morgan.txt
+>> CSV info: 8388608 rows and 2 cols
+loading data
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 9.241 ms
+[Profiling] Line 1: 9.214 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 13.13 ms
+[Profiling] Line 1: 9.179 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 13.178 ms
+[Profiling] Line 1: 9.146 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 7.371 ms
+[Profiling] Line 1: 9.104 ms
+[Profiling] Line 49: 196.421 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 197.806 ms
+The elapsed time (ms): 197.807
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.414 ms
+[Profiling] Line 1: 10.329 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.291 ms
+[Profiling] Line 1: 10.327 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.295 ms
+[Profiling] Line 1: 10.3 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.651 ms
+[Profiling] Line 1: 10.261 ms
+[Profiling] Line 49: 212.616 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.625 ms
+The elapsed time (ms): 212.626
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.256 ms
+[Profiling] Line 1: 10.32 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.296 ms
+[Profiling] Line 1: 10.328 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.295 ms
+[Profiling] Line 1: 10.29 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.663 ms
+[Profiling] Line 1: 10.258 ms
+[Profiling] Line 49: 212.389 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.396 ms
+The elapsed time (ms): 212.397
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.296 ms
+[Profiling] Line 1: 10.332 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.292 ms
+[Profiling] Line 1: 10.327 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.297 ms
+[Profiling] Line 1: 10.293 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.654 ms
+[Profiling] Line 1: 10.256 ms
+[Profiling] Line 49: 212.43 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.438 ms
+The elapsed time (ms): 212.438
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.251 ms
+[Profiling] Line 1: 10.33 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.293 ms
+[Profiling] Line 1: 10.334 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.297 ms
+[Profiling] Line 1: 10.312 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.711 ms
+[Profiling] Line 1: 10.247 ms
+[Profiling] Line 49: 212.417 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.426 ms
+The elapsed time (ms): 212.426
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.25 ms
+[Profiling] Line 1: 10.337 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.287 ms
+[Profiling] Line 1: 10.762 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.299 ms
+[Profiling] Line 1: 10.284 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.707 ms
+[Profiling] Line 1: 10.267 ms
+[Profiling] Line 49: 212.863 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.871 ms
+The elapsed time (ms): 212.872
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.25 ms
+[Profiling] Line 1: 10.284 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.291 ms
+[Profiling] Line 1: 10.317 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.301 ms
+[Profiling] Line 1: 10.288 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.646 ms
+[Profiling] Line 1: 10.262 ms
+[Profiling] Line 49: 212.357 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.366 ms
+The elapsed time (ms): 212.366
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.236 ms
+[Profiling] Line 1: 10.35 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.294 ms
+[Profiling] Line 1: 10.338 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.293 ms
+[Profiling] Line 1: 10.277 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.642 ms
+[Profiling] Line 1: 10.333 ms
+[Profiling] Line 49: 212.384 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.391 ms
+The elapsed time (ms): 212.392
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.3 ms
+[Profiling] Line 1: 10.331 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.289 ms
+[Profiling] Line 1: 10.323 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.293 ms
+[Profiling] Line 1: 10.311 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.65 ms
+[Profiling] Line 1: 10.316 ms
+[Profiling] Line 49: 212.486 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.493 ms
+The elapsed time (ms): 212.494
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.259 ms
+[Profiling] Line 1: 10.326 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.296 ms
+[Profiling] Line 1: 10.332 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.293 ms
+[Profiling] Line 1: 10.325 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.639 ms
+[Profiling] Line 1: 10.26 ms
+[Profiling] Line 49: 212.447 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.454 ms
+The elapsed time (ms): 212.455
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.245 ms
+[Profiling] Line 1: 10.39 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.289 ms
+[Profiling] Line 1: 10.338 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.295 ms
+[Profiling] Line 1: 10.295 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.647 ms
+[Profiling] Line 1: 10.264 ms
+[Profiling] Line 49: 212.76 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.768 ms
+The elapsed time (ms): 212.768
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.248 ms
+[Profiling] Line 1: 10.331 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.291 ms
+[Profiling] Line 1: 10.334 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.299 ms
+[Profiling] Line 1: 10.285 ms
+[
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Profiling] Line 14:
+[Profiling] Line 15: 8.643 ms
+[Profiling] Line 1: 10.366 ms
+[Profiling] Line 49: 212.417 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.424 ms
+The elapsed time (ms): 212.424
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.258 ms
+[Profiling] Line 1: 10.327 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.287 ms
+[Profiling] Line 1: 10.343 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.302 ms
+[Profiling] Line 1: 10.304 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.651 ms
+[Profiling] Line 1: 10.27 ms
+[Profiling] Line 49: 212.393 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.4 ms
+The elapsed time (ms): 212.401
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.32 ms
+[Profiling] Line 1: 10.364 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.286 ms
+[Profiling] Line 1: 10.313 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.298 ms
+[Profiling] Line 1: 10.277 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.652 ms
+[Profiling] Line 1: 10.349 ms
+[Profiling] Line 49: 212.473 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.481 ms
+The elapsed time (ms): 212.482
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.322 ms
+[Profiling] Line 1: 10.352 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.353 ms
+[Profiling] Line 1: 10.325 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.293 ms
+[Profiling] Line 1: 10.295 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.654 ms
+[Profiling] Line 1: 10.254 ms
+[Profiling] Line 49: 213.029 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 213.036 ms
+The elapsed time (ms): 213.037
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+Black-Scholes>> Run with 15 times, last 10 average (ms): 212.569 | 197.807 212.626 212.397 212.438 212.426 212.872 212.366 212.392 212.494 212.455 212.768 212.424 212.401 212.482 213.037
+Black-Scholes>> Last 10 key statements time (ms): 20.7556 | 22.593 20.75 20.758 20.75 20.754 20.738 20.75 20.75 20.759 20.748 20.754 20.75 20.764 20.755 20.788
+tigger> morgan, T16, Run10, SF8
++ ./compile-morgan 8 10 0
+# of cores: 16
+Loading table morgan
+File: /home/sable/hanfeng.c/github/HorsePower/data/morgan/db8/morgan.txt
+>> CSV info: 8388608 rows and 2 cols
+loading data
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 10.689 ms
+[Profiling] Line 1: 10.061 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 10.357 ms
+[Profiling] Line 1: 9.858 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 10.305 ms
+[Profiling] Line 1: 10.285 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 7.366 ms
+[Profiling] Line 1: 9.973 ms
+[Profiling] Line 49: 189.171 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 190.556 ms
+The elapsed time (ms): 190.557
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.232 ms
+[Profiling] Line 1: 11.299 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.913 ms
+[Profiling] Line 1: 11.083 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.964 ms
+[Profiling] Line 1: 11.055 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.799 ms
+[Profiling] Line 1: 10.968 ms
+[Profiling] Line 49: 210.826 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.835 ms
+The elapsed time (ms): 210.836
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.473 ms
+[Profiling] Line 1: 11.202 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.875 ms
+[Profiling] Line 1: 11.061 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.873 ms
+[Profiling] Line 1: 11.069 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.811 ms
+[Profiling] Line 1: 11.001 ms
+[Profiling] Line 49: 210.254 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.262 ms
+The elapsed time (ms): 210.263
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.091 ms
+[Profiling] Line 1: 11.154 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.917 ms
+[Profiling] Line 1: 11.084 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.873 ms
+[Profiling] Line 1: 11.083 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.851 ms
+[Profiling] Line 1: 11.048 ms
+[Profiling] Line 49: 209.801 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 209.809 ms
+The elapsed time (ms): 209.809
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.132 ms
+[Profiling] Line 1: 11.089 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.873 ms
+[Profiling] Line 1: 11.089 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 8.04 ms
+[Profiling] Line 1: 11.057 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.852 ms
+[Profiling] Line 1: 11.031 ms
+[Profiling] Line 49: 209.739 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 209.747 ms
+The elapsed time (ms): 209.747
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.307 ms
+[Profiling] Line 1: 11.131 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.881 ms
+[Profiling] Line 1: 11.208 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.932 ms
+[Profiling] Line 1: 11.086 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.82 ms
+[Profiling] Line 1: 11.283 ms
+[Profiling] Line 49: 212.124 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 212.132 ms
+The elapsed time (ms): 212.132
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.115 ms
+[Profiling] Line 1: 11.159 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.882 ms
+[Profiling] Line 1: 11.036 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.879 ms
+[Profiling] Line 1: 11.347 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.923 ms
+[Profiling] Line 1: 11.032 ms
+[Profiling] Line 49: 210.16 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.168 ms
+The elapsed time (ms): 210.169
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.308 ms
+[Profiling] Line 1: 11.12 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.869 ms
+[Profiling] Line 1: 11.171 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.909 ms
+[Profiling] Line 1: 11.083 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.8 ms
+[Profiling] Line 1: 11.208 ms
+[Profiling] Line 49: 210.141 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.149 ms
+The elapsed time (ms): 210.15
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.049 ms
+[Profiling] Line 1: 11.214 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.961 ms
+[Profiling] Line 1: 11.06 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.876 ms
+[Profiling] Line 1: 11.141 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.83 ms
+[Profiling] Line 1: 10.987 ms
+[Profiling] Line 49: 209.916 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 209.925 ms
+The elapsed time (ms): 209.926
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.394 ms
+[Profiling] Line 1: 11.097 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.865 ms
+[Profiling] Line 1: 11.107 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.881 ms
+[Profiling] Line 1: 11.072 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.838 ms
+[Profiling] Line 1: 11.061 ms
+[Profiling] Line 49: 210.071 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.081 ms
+The elapsed time (ms): 210.081
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.159 ms
+[Profiling] Line 1: 11.888 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.897 ms
+[Profiling] Line 1: 11.097 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.888 ms
+[Profiling] Line 1: 11.199 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 9.121 ms
+[Profiling] Line 1: 11.217 ms
+[Profiling] Line 49: 211.292 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 211.301 ms
+The elapsed time (ms): 211.302
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.041 ms
+[Profiling] Line 1: 11.174 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.877 ms
+[Profiling] Line 1: 11.141 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.922 ms
+[Profiling] Line 1: 11.063 ms
+[Profiling] L
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+Table morgan has been loaded
+
+Table: row = 8387608, col = 1
+ine 14:
+[Profiling] Line 15: 8.83 ms
+[Profiling] Line 1: 10.973 ms
+[Profiling] Line 49: 209.74 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 209.749 ms
+The elapsed time (ms): 209.75
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.379 ms
+[Profiling] Line 1: 11.34 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.903 ms
+[Profiling] Line 1: 11.198 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.877 ms
+[Profiling] Line 1: 11.076 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.811 ms
+[Profiling] Line 1: 11.073 ms
+[Profiling] Line 49: 210.376 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.385 ms
+The elapsed time (ms): 210.385
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.284 ms
+[Profiling] Line 1: 11.192 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.906 ms
+[Profiling] Line 1: 11.102 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.908 ms
+[Profiling] Line 1: 11.186 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.853 ms
+[Profiling] Line 1: 11.008 ms
+[Profiling] Line 49: 210.333 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.342 ms
+The elapsed time (ms): 210.342
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+[Profiling] Line 45:
+[Profiling] Line 46:
+[Profiling] Line 47:
+[Profiling] Line 48:
+[Profiling] Line 1: 11.29 ms
+[Profiling] Line 1: 11.175 ms
+[Profiling] Line 6:
+[Profiling] Line 7:
+[Profiling] Line 8: 7.899 ms
+[Profiling] Line 1: 11.218 ms
+[Profiling] Line 10:
+[Profiling] Line 11:
+[Profiling] Line 12: 7.914 ms
+[Profiling] Line 1: 11.081 ms
+[Profiling] Line 14:
+[Profiling] Line 15: 8.819 ms
+[Profiling] Line 1: 11.028 ms
+[Profiling] Line 49: 210.148 ms
+[Profiling] Line 50:
+[Profiling] Line 51:
+[Profiling] Line 52:
+[Profiling] Line 0: 210.157 ms
+The elapsed time (ms): 210.158
+Output:
+result   
+---------
+-0.018676
+-0.019056
+-0.018468
+-0.018605
+-0.018580
+-0.019071
+-0.018769
+-0.019380
+-0.018786
+-0.018969
+
+
+Black-Scholes>> Run with 15 times, last 10 average (ms): 210.44 | 190.557 210.836 210.263 209.809 209.747 212.132 210.169 210.15 209.926 210.081 211.302 209.75 210.385 210.342 210.158
+Black-Scholes>> Last 10 key statements time (ms): 17.1908 | 17.705 17.093 16.99 17.152 17.006 18.614 17.117 16.957 17.096 17.067 17.031 17.134 16.87 17.169 16.853
