@@ -1,0 +1,9 @@
++ cp opt/bs.h gencode.h
++ make bs sys=tigger debug=-DNO_PROFILE_INFO
+CUDA_HOME=/usr/local/cuda \
+pgcc   -o "compile-bs" \
+    main.c    \
+    -I/home/sable/hanfeng.c/github/HorsePower/libs/tigger/include -I/home/sable/hanfeng.c/github/HorsePower/src/horseir/v3    \
+    -L/home/sable/hanfeng.c/github/HorsePower/libs/tigger/lib -lcore -lpcre2-8    \
+    -c99 -lm -lstdc++ -acc -ta=nvidia -mp -O4  \
+-DNO_PROFILE_INFO 

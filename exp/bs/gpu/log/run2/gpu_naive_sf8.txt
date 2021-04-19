@@ -1,0 +1,2530 @@
+tigger> bs, T1, Run10, SF8
++ ./compile-bs 8 10 1
+# of cores: 1
+Loading table blackscholes
+File: /home/sable/hanfeng.c/github/HorsePower/data/bs/db8/blackscholes.txt
+>> CSV info: 8388608 rows and 9 cols
+loading data
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+// GPU initialization time (ms): 284.638
+Kernel execution time (ms): 15.77
+Kernel execution time (ms): 8.431
+Kernel execution time (ms): 8.444
+Kernel execution time (ms): 8.429
+The elapsed time (ms): 1991.34
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 15.744
+Kernel execution time (ms): 8.425
+Kernel execution time (ms): 8.426
+Kernel execution time (ms): 8.427
+The elapsed time (ms): 954.932
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 15.734
+Kernel execution time (ms): 8.429
+Kernel execution time (ms): 8.432
+Kernel execution time (ms): 8.427
+The elapsed time (ms): 956.724
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 2.173
+Kernel execution time (ms): 0.782
+Kernel execution time (ms): 0.736
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 884.14
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.368
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.736
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 880.973
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.368
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 880.296
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.736
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 880.406
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.736
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 880.049
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.368
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 879.231
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.736
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 879.636
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 880.422
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.367
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 879.653
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.368
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 879.326
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.368
+Kernel execution time (ms): 0.736
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 878.897
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 878.955
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Black-Scholes>> Run with 15 times, last 10 average (ms): 879.687 | 1991.34 954.932 956.724 884.14 880.973 880.296 880.406 880.049 879.231 879.636 880.422 879.653 879.326 878.897 878.955
+Black-Scholes>> Last 10 average kernel time (ms): 3.5803 | 41.074 41.022 41.022 4.429 3.579 3.581 3.579 3.579 3.581 3.58 3.581 3.579 3.583 3.579 3.581
+Black-Scholes>> Last 10 average data time (ms): 69.275 | 178.283 106.552 105.911 69.449 69.311 69.449 69.355 69.223 69.196 69.366 69.285 69.277 69.082 69.415 69.102
+tigger> bs, T2, Run10, SF8
++ ./compile-bs 8 10 1
+# of cores: 2
+Loading table blackscholes
+File: /home/sable/hanfeng.c/github/HorsePower/data/bs/db8/blackscholes.txt
+>> CSV info: 8388608 rows and 9 cols
+loading data
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+// GPU initialization time (ms): 281.726
+Kernel execution time (ms): 15.763
+Kernel execution time (ms): 8.433
+Kernel execution time (ms): 8.429
+Kernel execution time (ms): 8.429
+The elapsed time (ms): 1193.03
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 15.73
+Kernel execution time (ms): 8.434
+Kernel execution time (ms): 8.432
+Kernel execution time (ms): 8.429
+The elapsed time (ms): 813.952
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 9.837
+Kernel execution time (ms): 1.924
+Kernel execution time (ms): 8.426
+Kernel execution time (ms): 8.433
+The elapsed time (ms): 788.923
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 15.74
+Kernel execution time (ms): 8.428
+Kernel execution time (ms): 8.43
+Kernel execution time (ms): 8.431
+The elapsed time (ms): 805.965
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.586
+Kernel execution time (ms): 0.741
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 735.677
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.736
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 732.925
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.381
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 733.231
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.736
+The elapsed time (ms): 733.975
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.368
+Kernel execution time (ms): 0.736
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.736
+The elapsed time (ms): 732.431
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245 Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+ 
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.368
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.736
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 733.048
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.368
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.736
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 731.725
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.736
+Kernel execution time (ms): 0.736
+The elapsed time (ms): 733.202
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 734.169
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 732.543
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 733.737
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Black-Scholes>> Run with 15 times, last 10 average (ms): 733.099 | 1193.03 813.952 788.923 805.965 735.677 732.925 733.231 733.975 732.431 733.048 731.725 733.202 734.169 732.543 733.737
+Black-Scholes>> Last 10 average kernel time (ms): 3.5811 | 41.054 41.025 28.62 41.029 3.802 3.579 3.592 3.58 3.577 3.58 3.581 3.578 3.58 3.582 3.582
+Black-Scholes>> Last 10 average data time (ms): 69.8 | 182.184 107.782 93.132 104.887 69.816 69.698 70.266 69.68 69.751 69.979 69.542 69.847 69.782 69.764 69.691
+tigger> bs, T4, Run10, SF8
++ ./compile-bs 8 10 1
+# of cores: 4
+Loading table blackscholes
+File: /home/sable/hanfeng.c/github/HorsePower/data/bs/db8/blackscholes.txt
+>> CSV info: 8388608 rows and 9 cols
+loading data
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+// GPU initialization time (ms): 281.891
+Kernel execution time (ms): 15.826
+Kernel execution time (ms): 8.438
+Kernel execution time (ms): 8.446
+Kernel execution time (ms): 8.433
+The elapsed time (ms): 816.978
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 15.738
+Kernel execution time (ms): 8.435
+Kernel execution time (ms): 8.453
+Kernel execution time (ms): 8.427
+The elapsed time (ms): 788.821
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 12.332
+Kernel execution time (ms): 4.189
+Kernel execution time (ms): 8.427
+Kernel execution time (ms): 8.429
+The elapsed time (ms): 767.714
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 15.735
+Kernel execution time (ms): 8.437
+Kernel execution time (ms): 8.432
+Kernel execution time (ms): 8.433
+The elapsed time (ms): 787.897
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 2.019
+Kernel execution time (ms): 0.783
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 715.913
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 714.104
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 714.371
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 714.4
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 714.215
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 715.05
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 714.37
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 715.438
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 714.219
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 714.916
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 715.654
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Black-Scholes>> Run with 15 times, last 10 average (ms): 714.674 | 816.978 788.821 767.714 787.897 715.913 714.104 714.371 714.4 714.215 715.05 714.37 715.438 714.219 714.916 715.654
+Black-Scholes>> Last 10 average kernel time (ms): 3.5836 | 41.143 41.053 33.377 41.037 4.279 3.585 3.585 3.585 3.582 3.583 3.583 3.584 3.584 3.583 3.582
+Black-Scholes>> Last 10 average data time (ms): 69.2979 | 183.188 106.847 92.497 105.119 69.286 69.294 69.247 69.245 69.292 69.391 69.276 69.345 69.25 69.385 69.254
+tigger> bs, T8, Run10, SF8
++ ./compile-bs 8 10 1
+# of cores: 8
+Loading table blackscholes
+File: /home/sable/hanfeng.c/github/HorsePower/data/bs/db8/blackscholes.txt
+>> CSV info: 8388608 rows and 9 cols
+loading data
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+// GPU initialization time (ms): 282.388
+Kernel execution time (ms): 15.829
+Kernel execution time (ms): 8.443
+Kernel execution time (ms): 8.438
+Kernel execution time (ms): 8.432
+The elapsed time (ms): 786.35
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 15.737
+Kernel execution time (ms): 8.434
+Kernel execution time (ms): 8.437
+Kernel execution time (ms): 8.434
+The elapsed time (ms): 801.142
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 15.743
+Kernel execution time (ms): 8.438
+Kernel execution time (ms): 8.433
+Kernel execution time (ms): 8.434
+The elapsed time (ms): 798.696
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 7.848
+Kernel execution time (ms): 8.363
+Kernel execution time (ms): 8.433
+Kernel execution time (ms): 8.437
+The elapsed time (ms): 773.221
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.789
+Kernel execution time (ms): 0.744
+Kernel execution time (ms): 0.741
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 726.381
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.741
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.74
+The elapsed time (ms): 726.221
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.371
+Kernel execution time (ms): 0.741
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.74
+The elapsed time (ms): 726.658
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.371
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 725.764
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.372
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.741
+The elapsed time (ms): 726.35
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C   Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+       100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.372
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.74
+The elapsed time (ms): 726.519
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.372
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.741
+Kernel execution time (ms): 0.74
+The elapsed time (ms): 726.368
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.372
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.74
+The elapsed time (ms): 725.974
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.372
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.74
+The elapsed time (ms): 726.652
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.372
+Kernel execution time (ms): 0.741
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.74
+The elapsed time (ms): 726.527
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.372
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.74
+The elapsed time (ms): 726.72
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Black-Scholes>> Run with 15 times, last 10 average (ms): 726.375 | 786.35 801.142 798.696 773.221 726.381 726.221 726.658 725.764 726.35 726.519 726.368 725.974 726.652 726.527 726.72
+Black-Scholes>> Last 10 average kernel time (ms): 3.5918 | 41.142 41.042 41.048 33.081 4.013 3.59 3.591 3.59 3.593 3.592 3.593 3.592 3.592 3.593 3.592
+Black-Scholes>> Last 10 average data time (ms): 70.4442 | 194.701 107.401 104.773 87.375 70.282 70.431 70.389 70.298 70.512 70.34 70.306 70.37 70.949 70.418 70.429
+tigger> bs, T16, Run10, SF8
++ ./compile-bs 8 10 1
+# of cores: 16
+Loading table blackscholes
+File: /home/sable/hanfeng.c/github/HorsePower/data/bs/db8/blackscholes.txt
+>> CSV info: 8388608 rows and 9 cols
+loading data
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+// GPU initialization time (ms): 281.483
+Kernel execution time (ms): 15.831
+Kernel execution time (ms): 8.437
+Kernel execution time (ms): 8.434
+Kernel execution time (ms): 8.449
+The elapsed time (ms): 770.208
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 15.737
+Kernel execution time (ms): 8.433
+Kernel execution time (ms): 8.436
+Kernel execution time (ms): 8.436
+The elapsed time (ms): 816.119
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 15.745
+Kernel execution time (ms): 8.431
+Kernel execution time (ms): 8.437
+Kernel execution time (ms): 8.363
+The elapsed time (ms): 808.337
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 15.737
+Kernel execution time (ms): 8.436
+Kernel execution time (ms): 8.438
+Kernel execution time (ms): 0.824
+The elapsed time (ms): 799.718
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 742.374
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 742.781
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.368
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 745.665
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.737
+Kernel execution time (ms): 0.738
+The elapsed time (ms): 740.884
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.74
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 743.46
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+Table blackscholes has been loaded
+
+Table: row = 8388608, col = 3
+
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.369
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 743.064
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 742.629
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.737
+The elapsed time (ms): 741.282
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 740.015
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.37
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 743.368
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Kernel execution time (ms): 1.371
+Kernel execution time (ms): 0.739
+Kernel execution time (ms): 0.738
+Kernel execution time (ms): 0.739
+The elapsed time (ms): 740.578
+Output:
+optiontype sptprice   optionprice
+---------------------------------
+C          42.000000  4.759423   
+P          42.000000  0.808600   
+P          100.000000 3.714602   
+C          100.000000 8.591659   
+C          60.000000  2.133372   
+C          100.000000 10.895611  
+C          100.000000 14.421571  
+C          100.000000 18.630859  
+C          100.000000 1.814984   
+C          100.000000 5.850274   
+C          100.000000 10.308147  
+C          100.000000 0.003523   
+C          100.000000 1.140723   
+C          100.000000 4.216752   
+C          100.000000 11.135245  
+C          100.000000 16.092639  
+C          100.000000 21.163455  
+C          100.000000 3.659963   
+C          100.000000 9.582231   
+C          100.000000 14.975798  
+
+
+Black-Scholes>> Run with 15 times, last 10 average (ms): 742.373 | 770.208 816.119 808.337 799.718 742.374 742.781 745.665 740.884 743.46 743.064 742.629 741.282 740.015 743.368 740.578
+Black-Scholes>> Last 10 average kernel time (ms): 3.5857 | 41.151 41.042 40.976 33.435 3.585 3.587 3.583 3.584 3.588 3.584 3.587 3.585 3.586 3.586 3.587
+Black-Scholes>> Last 10 average data time (ms): 69.228 | 181.397 105.656 96.299 96.207 69.223 69.161 69.183 69.239 69.24 69.434 69.2 69.157 69.264 69.228 69.174

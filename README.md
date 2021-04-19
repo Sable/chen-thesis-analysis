@@ -105,8 +105,19 @@ Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1-V5bIV2EtWUS8g2
 
 ## 4. Experiments: GPU Benchmarks
 
+Benchmarks
+
+- Black-Scholes
+- Morgan
+
 Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6Le4HQdXxawH5fOy-eXT7ov7EwsLIE/edit#gid=1240442184))
 
-- Working on migrating the data to this repository
-
+* Black-Scholes
+  - HorsePower
+      + Path: `exp/morgan/gpu`
+      + Log: `log/run1`
+* Morgan
+  - HorsePower
+      + Path: `exp/bs/gpu`
+      + Log: `log/run2`
 
