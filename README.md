@@ -108,14 +108,14 @@ Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1-V5bIV2EtWUS8g2
 * udf-froid: queries derived from TPC-H queries on the Froid paper
   - HorsePower
       + Path: `exp/udf/froid/hir`
-      + Log: `log/sf8/`
+      + Log: `log/sf8`
   - MonetDB
       + Path: `exp/udf/froid/monetdb`
-      + Log: `log/log-t*`
+      + Log: `log/sf8`
 * udf-bs: queries derived from the Black-Scholes code
   - HorsePower
       + Path: `exp/udf/hir/bs`
-      + Log: `log/`
+      + Log: `log`
   - MonetDB
       + Path: `exp/udf/monetdb/bs`
       + Log: `log/log-t*`
