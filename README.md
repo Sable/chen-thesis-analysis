@@ -98,9 +98,27 @@ Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1h9GHvkmiJ0Vbp6L
 
 ## 3. Experiments: Queries and UDFs
 
+Benchmarks
+
+- udf-froid
+- udf-bs
+
 Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1-V5bIV2EtWUS8g26YMDidXljymy_3pA0GJMh6v70wOY/edit#gid=1173154133))
 
-- Working on migrating the data to this repository
+* udf-froid: queries derived from TPC-H queries on the Froid paper
+  - HorsePower
+      + Path: `exp/udf/froid/hir`
+      + Log: `log/sf8/`
+  - MonetDB
+      + Path: `exp/udf/froid/monetdb`
+      + Log: `log/log-t*`
+* udf-bs: queries derived from the Black-Scholes code
+  - HorsePower
+      + Path: `exp/udf/hir/bs`
+      + Log: `log/`
+  - MonetDB
+      + Path: `exp/udf/monetdb/bs`
+      + Log: `log/log-t*`
 
 
 ## 4. Experiments: GPU Benchmarks
