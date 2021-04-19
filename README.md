@@ -114,10 +114,10 @@ Results ([Summary sheet](https://docs.google.com/spreadsheets/d/1-V5bIV2EtWUS8g2
       + Log: `log/sf8`
 * udf-bs: queries derived from the Black-Scholes code
   - HorsePower
-      + Path: `exp/udf/hir/bs`
+      + Path: `exp/udf/bs/hir`
       + Log: `log`
   - MonetDB
-      + Path: `exp/udf/monetdb/bs`
+      + Path: `exp/udf/bs/monetdb`
       + Log: `log/log-t*`
 
 
